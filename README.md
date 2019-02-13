@@ -1,7 +1,11 @@
-# GUSS
-We will be making an app that will compare prices of food and fees from grub hub, door dash, uber eats, seamless, and skip the dishes to determine which company offers the lowest price for that dish 
+# Sophia's Storybook 
+Interactive and educational storybook for kids. The final project will be a webapp with activites that allow users to play games to progress through the story line. The development stack consists of React.JS for the front-end and Node.JS for the backend. 
 
 Scrum Board
-https://app.smartsheet.com/b/publish?EQBCT=4fa564419b5b45a388a3451c909ea59f
+https://trello.com/invite/b/pSqALe0r/7e0792b462b8871a532c33ca42e0f7e2/sophia-scrum-board
 
 We will be using github issues for task tracking
+
+
+
+By: Aunik Ahmed, Edwin Hung, Stephanie Yu, Jonathon Dong
