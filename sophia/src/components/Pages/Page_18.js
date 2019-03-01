@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
+import Image from "./Sofia_Images/Page_18.JPG";
 
 class Page18 extends Component {
   render() {
@@ -29,6 +30,7 @@ Dr. Q said, “It sure is a lot of data! But it is actually kind of fun! And all
 Sofia heard a word she was not sure of. She asked “Wait. What Is consent?” 
 
         </div>
+        <img src = {Image}/>
 
 
 

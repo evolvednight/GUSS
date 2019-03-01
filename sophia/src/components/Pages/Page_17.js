@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
+import Image from "./Sofia_Images/Page_17.JPG";
 
 class Page17 extends Component {
   render() {
@@ -28,6 +29,7 @@ Differences on the playground: 1. No flying bugs 2. Long sleeves and pants on So
 Michael 11. Butterfly 12. Bird on Sofia's bench
 
         </div>
+        <img src = {Image}/>
 
 
 

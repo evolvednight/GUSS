@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
+import Image from "./Sofia_Images/Page_16.JPG";
 
 class Page16 extends Component {
   render() {
@@ -29,6 +30,7 @@ The first one is how she looked after taking a hike on a hot, sunny day without 
 after remembering her bug spray and sun protection. 
 
         </div>
+        <img src = {Image}/>
 
 
 

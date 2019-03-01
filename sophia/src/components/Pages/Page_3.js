@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
+import Image from "./Sofia_Images/Page_3.JPG";
 
 class Page3 extends Component {
   render() {
@@ -26,6 +27,7 @@ class Page3 extends Component {
         Dr. Wilson said, “I would like you to meet someone who can tell you more about it. Dr. Amanda Quinby is a scientist. You can call her Dr. Q. She can tell you all about a research study that you might want to help with. It will help us understand asthma better. What we find will help us help other children with asthma." 
         Sofia heard the words “scientist” and “research” and got a little scared. She thought about movies with mad scientists and wild experiments. She was not a guinea pig! 
         </div>
+        <img src = {Image}/>
 
 
 

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
+import Image from "./Sofia_Images/Page_4.JPG";
 
 class Page4 extends Component {
   render() {
@@ -29,6 +30,7 @@ class Page4 extends Component {
 
 
         </div>
+        <img src = {Image}/>
 
 
 

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
+import Image from "./Sofia_Images/Page_13.JPG";
 
 class Page13 extends Component {
   render() {
@@ -30,6 +31,7 @@ Do you know how much you weigh?____ pounds
 What size shoe are you?
 
         </div>
+        <img src = {Image}/>
 
 
 

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
+import Image from "./Sofia_Images/Page_10.JPG";
 
 class Page10 extends Component {
   render() {
@@ -26,6 +27,7 @@ class Page10 extends Component {
         You might be asked to participate in a focus group. That is when a group of people come together to talk about a topic that the scientist is interested in learning more about.
 
         </div>
+        <img src = {Image}/>
 
 
 

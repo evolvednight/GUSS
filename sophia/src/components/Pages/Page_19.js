@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
+import Image from "./Sofia_Images/Page_19.JPG";
 
 class Page19 extends Component {
   render() {
@@ -28,6 +29,7 @@ class Page19 extends Component {
 "Since you're still young, we also talk with your parents about a study. They can help decide with you if it's a good idea. If you all think it is, then they give consent for you to participate. You would also have to assent to the study. This means that you agree that you want to do it. If you agree to be a part of the study and give consent then you'll be called a participant which is what a person who is in a study is called.” 
 
         </div>
+        <img src = {Image}/>
 
 
 

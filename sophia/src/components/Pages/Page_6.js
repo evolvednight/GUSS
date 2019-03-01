@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
+import Image from "./Sofia_Images/Page_6.JPG";
 
 class Page6 extends Component {
   render() {
@@ -28,6 +29,7 @@ class Page6 extends Component {
         Sofia liked the idea of helping other kids. But she was still nervous. Her dad looked nervous too. Dr. O said, “Please. Let's talk about research first. What do you want to know? I am happy to answer any of your questions.” 
         “So what IS a research study?" was the first thing Sofia blurted out. 
         </div>
+        <img src = {Image}/>
 
 
 

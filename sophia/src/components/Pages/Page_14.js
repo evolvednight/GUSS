@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
+import Image from "./Sofia_Images/Page_14.JPG";
 
 class Page14 extends Component {
   render() {
@@ -31,6 +32,7 @@ Dr. Q said, “That does seem funny, doesn't it? Well, if the people in the stud
 Dr. Q explained a little more. “There is also a kind of study where some people try a new medicine and other people try an old one. This is to see if the new one works better.”
 
         </div>
+        <img src = {Image}/>
 
 
 

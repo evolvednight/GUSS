@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
+import Image from "./Sofia_Images/Page_9.JPG";
 
 class Page9 extends Component {
   render() {
@@ -29,6 +30,7 @@ Other times we ask people to try doing something new or different to see if it m
 Scientists or researchers may watch people and take notes. This is called observation. They also might read what people write on a survey. This helps them learn about the people in their study. Scientists might ask you to take some notes about what you are doing each week that you are in a study. All of this information is called data.” 
 
         </div>
+        <img src = {Image}/>
 
 
 

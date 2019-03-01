@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
+import Image from "./Sofia_Images/Page_24.JPG";
 
 class Page24 extends Component {
   render() {
@@ -29,6 +30,7 @@ Dr. Q noticed Sofia's sad face. She asked “Sofia, are you a little worried abo
 Sofia nodded, “Yes. And I'm also worried about how to tell my friends about this when they ask about it.” 
 
         </div>
+        <img src = {Image}/>
 
 
 

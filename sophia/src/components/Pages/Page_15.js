@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
+import Image from "./Sofia_Images/Page_15.JPG";
 
 class Page15 extends Component {
   render() {
@@ -28,6 +29,7 @@ That was really annoying. Then my mom showed me a different way to do it.'
 'When I tie my shoes the new way, they stay tied all day. Now I don't trip on them anymore. It's great!' 
 
         </div>
+        <img src = {Image}/>
 
 
 

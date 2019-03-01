@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
+import Image from "./Sofia_Images/Page_23.JPG";
 
 class Page23 extends Component {
   render() {
@@ -29,6 +30,7 @@ Sofia and Michael were excited, and said at the same time "Yes!”
 Dr. Q explained, “In my study, you will come into the doctor's office a little more than you usually do. We will sometimes do check-ups to make sure you are feeling okay. Sometimes, we might take a blood sample from you with a needle. Blood helps us learn about what's going on inside of you, so we know you're healthy inside and out! There are other tests that will help us with that too." 
 
         </div>
+        <img src = {Image}/>
 
 
 

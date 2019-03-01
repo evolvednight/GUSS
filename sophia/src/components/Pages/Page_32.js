@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
+import Image from "./Sofia_Images/Page_32.JPG";
 
 class Page32 extends Component {
   render() {
@@ -29,6 +30,7 @@ Treatment: Something a doctor might give you or ask you to do in order to make y
 Wheezing: A whistling noise that the lungs make when it is hard to breathe. This happens because the tubes in the lungs are too narrow. Wheezing can be a symptom of asthma, but it can also be because of other things. 
 
         </div>
+        <img src = {Image}/>
 
 
 
