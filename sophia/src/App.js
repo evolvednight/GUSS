@@ -20,6 +20,7 @@ class App extends Component {
           <div className="nav">
           <NavLink exact to="/Page1" activeClassName="active">Page1</NavLink>
           <NavLink to="/Page2" activeClassName="active">Page2</NavLink>
+          <NavLink to="/Home" activeClassName="active">Home</NavLink>
           </div>
           <Route render={({location}) => (
           <TransitionGroup>
@@ -31,6 +32,7 @@ class App extends Component {
               <Switch location={location}>
                 <Route exact path="/Page1" component={Page1} />
                 <Route path="/Page2" component={Page2} />
+                <Route path="/Home" component={Home} />
               </Switch>
             </CSSTransition>
           </TransitionGroup>

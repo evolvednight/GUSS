@@ -6,7 +6,6 @@ class Home extends Component {
   render() {
     return (
       <div className="home">
-        <Navigation/>
         <div className="about-card">
           <Button variant="danger" className="btn_1">
             START STORY
