@@ -32,8 +32,8 @@ class Page1 extends Component {
           a lot to make sure she had the right medicine to help her lungs work.
           She was tired of going to the doctor's.
         </div>
-        <img src={Image} />
-        <Link to="/Home">
+        <img src={Image} alt="" />
+        <Link to="/">
           <Button>Prev Page</Button>
         </Link>
         <Link to="/page2">

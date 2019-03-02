@@ -2,12 +2,7 @@ import React, { Component } from "react";
 import Home from "./components/Home";
 import About from "./components/About";
 import Help from "./components/Help";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  NavLink
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Navigation from "./components/Navigation";
 import Page1 from "./components/Pages/Page_1";
@@ -54,17 +49,6 @@ class App extends Component {
 
         <Navigation />
         <div className="App">
-          <div className="nav">
-            <NavLink exact to="/Page1" activeClassName="active">
-              Page1
-            </NavLink>
-            <NavLink to="/Page2" activeClassName="active">
-              Page2
-            </NavLink>
-            <NavLink to="/Home" activeClassName="active">
-              Home
-            </NavLink>
-          </div>
           <Route
             render={({ location }) => (
               <TransitionGroup>
@@ -74,7 +58,10 @@ class App extends Component {
                   classNames="fade"
                 >
                   <Switch location={location}>
-                    <Route exact path="/Page1" component={Page1} />
+                    <Route exact path="/" component={Home} />
+                    <Route path="/About" component={About} />
+                    <Route path="/Help" component={Help} />
+                    <Route path="/Page1" component={Page1} />
                     <Route path="/Page2" component={Page2} />
                     <Route path="/Page3" component={Page3} />
                     <Route path="/Page4" component={Page4} />
@@ -107,7 +94,6 @@ class App extends Component {
                     <Route path="/Page31" component={Page31} />
                     <Route path="/Page32" component={Page32} />
                     <Route path="/Page33" component={Page33} />
-                    <Route path="/Home" component={Home} />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>
