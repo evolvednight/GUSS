@@ -5,12 +5,7 @@ class Page11 extends Component {
   render() {
     return (
       <div className="Page11">
-        <div className="text">Sofia</div>
-
-        <div className="text">Learns</div>
-
-        <div className="text">Research</div>
-
+       
         <div className="text">
           You might be asked to complete a survey. This is where you answer
           questions on paper or on a computer about yourself. Practice taking a

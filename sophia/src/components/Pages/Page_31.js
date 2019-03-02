@@ -5,11 +5,7 @@ class Page31 extends Component {
   render() {
     return (
       <div className="Page31">
-        <div className="text">Sofia</div>
-
-        <div className="text">Learns</div>
-
-        <div className="text">Research</div>
+       
 
         <div className="text">
           Participant: A person that agrees to be in a study. Placebo: A pretend

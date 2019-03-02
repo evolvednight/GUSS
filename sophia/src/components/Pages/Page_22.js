@@ -5,12 +5,7 @@ class Page22 extends Component {
   render() {
     return (
       <div className="Page22">
-        <div className="text">Sofia</div>
-
-        <div className="text">Learns</div>
-
-        <div className="text">Research</div>
-
+      
         <div className="text">
           Crack the Code! Help Sofia figure out the hidden message!
         </div>

@@ -6,11 +6,7 @@ class Page10 extends Component {
   render() {
     return (
       <div className="Page10">
-        <div className="text">Sofia</div>
-
-        <div className="text">Learns</div>
-
-        <div className="text">Research</div>
+      
 
         <div className="text">
           You might be asked to participate in a focus group. That is when a

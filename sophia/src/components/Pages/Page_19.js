@@ -6,11 +6,7 @@ class Page19 extends Component {
   render() {
     return (
       <div className="Page19">
-        <div className="text">Sofia</div>
-
-        <div className="text">Learns</div>
-
-        <div className="text">Research</div>
+      
 
         <div className="text">
           "Consent is when you agree to be in the study," answered Dr. Q. "It's

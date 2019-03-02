@@ -2,16 +2,13 @@ import React, { Component } from "react";
 import Image from "./Sofia_Images/Page_1.JPG";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
+import "./Page.css"
 
 class Page1 extends Component {
   render() {
     return (
       <div className="Page1">
-        <div className="text">Sofia</div>
 
-        <div className="text">Learns</div>
-
-        <div className="text">Research</div>
 
         <div className="text">
           Sofia was bored. She and her brother, Michael, were at the doctor's

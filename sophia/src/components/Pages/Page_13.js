@@ -6,11 +6,7 @@ class Page13 extends Component {
   render() {
     return (
       <div className="Page13">
-        <div className="text">Sofia</div>
-
-        <div className="text">Learns</div>
-
-        <div className="text">Research</div>
+        
 
         <div className="text">
           Some scientists will ask if they can measure how tall you are, how

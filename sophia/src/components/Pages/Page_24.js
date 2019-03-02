@@ -6,11 +6,7 @@ class Page24 extends Component {
   render() {
     return (
       <div className="Page24">
-        <div className="text">Sofia</div>
-
-        <div className="text">Learns</div>
-
-        <div className="text">Research</div>
+      
 
         <div className="text">
           Sofia didn't like needles, but she did like being healthy. Dr. Q

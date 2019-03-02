@@ -5,11 +5,7 @@ class Page30 extends Component {
   render() {
     return (
       <div className="Page30">
-        <div className="text">Sofia</div>
-
-        <div className="text">Learns</div>
-
-        <div className="text">Research</div>
+     
 
         <div className="text">
           Focus Group: When a small group of people come together to talk about

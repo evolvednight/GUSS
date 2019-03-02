@@ -5,12 +5,7 @@ class Page29 extends Component {
   render() {
     return (
       <div className="Page29">
-        <div className="text">Sofia</div>
-
-        <div className="text">Learns</div>
-
-        <div className="text">Research</div>
-
+      
         <div className="text">
           Glossary of Words Assent: A child's or teenager's agreement to be part
           of a study. Asthma (said like Az-muh): A disease that some people have

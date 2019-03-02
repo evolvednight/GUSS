@@ -6,11 +6,7 @@ class Page17 extends Component {
   render() {
     return (
       <div className="Page17">
-        <div className="text">Sofia</div>
-
-        <div className="text">Learns</div>
-
-        <div className="text">Research</div>
+     
 
         <div className="text">
           There are 12 differences. Did you find them all? Differences on the
