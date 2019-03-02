@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Home.css";
 import { Button, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 class Home extends Component {
   render() {
@@ -9,19 +10,23 @@ class Home extends Component {
         <Navbar fixed="top" variant="dark" className="navbar">
           <div className="logo">SOPHIA'S STORYBOOK</div>
         </Navbar>
-        <div className="about-card">
+        <div className="home-card">
           <Button variant="danger" className="btn_1">
             START STORY
           </Button>
           <Button variant="warning" className="btn_2">
             SKIP PAGES
           </Button>
-          <Button variant="primary" className="btn_3">
-            ABOUT
-          </Button>
-          <Button variant="info" className="btn_4">
-            HELP
-          </Button>
+          <Link to="/About">
+            <Button variant="primary" className="btn_3">
+              ABOUT
+            </Button>
+          </Link>
+          <Link to="/Help">
+            <Button variant="info" className="btn_4">
+              Help
+            </Button>
+          </Link>
         </div>
       </div>
     );

@@ -1,13 +1,17 @@
 import React, { Component } from "react";
 import "./Help.css";
 import { Navbar, CardDeck, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 class Help extends Component {
   render() {
     return (
       <div className="help">
         <Navbar fixed="top" variant="dark" className="navbar">
-          <div className="logo">SOPHIA'S STORYBOOK</div>
+          <div className="logo">
+            {" "}
+            <Link to="/">SOPHIA'S STORYBOOK</Link>
+          </div>
         </Navbar>
 
         {/* 3 helper Cards */}
