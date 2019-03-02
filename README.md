@@ -7,5 +7,6 @@ https://trello.com/invite/b/pSqALe0r/7e0792b462b8871a532c33ca42e0f7e2/sophia-scr
 We will be using github issues for task tracking
 
 
+https://docs.google.com/document/d/1-YxEFDxlp5CahtZuNRGIMTDeZbPjyUFJSA4gSI_-4oI/edit
 
 By: Aunik Ahmed, Edwin Hung, Stephanie Yu, Jonathon Dong
