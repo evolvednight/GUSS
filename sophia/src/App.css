@@ -54,7 +54,7 @@ section {
 .fade-appear-active,
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 300ms ease-in 150ms;
+  transition: opacity 50ms ease-in 150ms;
 }
 
 .fade-exit {
