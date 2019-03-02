@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  padding-top: 60px;
   font-family: sans-serif;
+  overflow-y: hidden;
 }
 
 .App {
@@ -24,13 +24,13 @@ body {
   text-align: center;
   margin: 0 15px;
   padding: 10px;
-  border: 1px rgba(255,255,255,0.5) solid;
+  border: 1px rgba(255, 255, 255, 0.5) solid;
   transition: all 0.5s ease-in-out;
   text-decoration: none;
   color: white;
 }
 .nav a.active {
-  background-color: #61DAFB;
+  background-color: #61dafb;
   color: #222;
 }
 section {
@@ -48,30 +48,23 @@ section {
 /* simple - enter transition 300ms, exit 150ms */
 .fade-appear,
 .fade-enter {
-    opacity: 0;
-    z-index: 1;
+  opacity: 0;
+  z-index: 1;
 }
 .fade-appear-active,
 .fade-enter.fade-enter-active {
-    opacity: 1;
-    transition: opacity 300ms ease-in 150ms;
+  opacity: 1;
+  transition: opacity 300ms ease-in 150ms;
 }
 
 .fade-exit {
-    opacity: 1;
+  opacity: 1;
 }
 
 .fade-exit.fade-exit-active {
-    opacity: 0;
-    transition: opacity 150ms ease-in-out;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
 }
-
-
-
-
-
-
-
 
 /* advanced - enter transition 800ms, exit 150ms */
 /* .fade-appear,
