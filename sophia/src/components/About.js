@@ -15,7 +15,7 @@ class About extends Component {
         </Navbar>
 
         <div className="about-card">
-          <p>Wazzup</p>
+          <p>Wazzzup</p>
         </div>
       </div>
     );
