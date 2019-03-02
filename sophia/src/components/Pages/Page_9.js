@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
 import Image from "./Sofia_Images/Page_9.JPG";
-
+import { Link } from "react-router-dom";
 class Page9 extends Component {
   render() {
     return (
@@ -31,7 +31,16 @@ Scientists or researchers may watch people and take notes. This is called observ
 
         </div>
         <img src = {Image}/>
-
+        <Link to= "/page8">
+        <Button >
+          Prev Page
+        </Button>
+        </Link>
+        <Link to= "/page10">
+        <Button>
+          Next Page
+        </Button>
+        </Link>
 
 
       </div>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
 import Image from "./Sofia_Images/Page_3.JPG";
-
+import { Link } from "react-router-dom";
 class Page3 extends Component {
   render() {
     return (
@@ -28,7 +28,16 @@ class Page3 extends Component {
         Sofia heard the words “scientist” and “research” and got a little scared. She thought about movies with mad scientists and wild experiments. She was not a guinea pig! 
         </div>
         <img src = {Image}/>
-
+        <Link to= "/page2">
+        <Button >
+          Prev Page
+        </Button>
+        </Link>
+        <Link to= "/page4">
+        <Button>
+          Next Page
+        </Button>
+        </Link>
 
 
       </div>

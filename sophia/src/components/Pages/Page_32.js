@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
 import Image from "./Sofia_Images/Page_32.JPG";
-
+import { Link } from "react-router-dom";
 class Page32 extends Component {
   render() {
     return (
@@ -31,7 +31,16 @@ Wheezing: A whistling noise that the lungs make when it is hard to breathe. This
 
         </div>
         <img src = {Image}/>
-
+        <Link to= "/page31">
+        <Button >
+          Prev Page
+        </Button>
+        </Link>
+        <Link to= "/page33">
+        <Button>
+          Next Page
+        </Button>
+        </Link>
 
 
       </div>

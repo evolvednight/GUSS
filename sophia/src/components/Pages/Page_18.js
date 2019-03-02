@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
 import Image from "./Sofia_Images/Page_18.JPG";
-
+import { Link } from "react-router-dom";
 class Page18 extends Component {
   render() {
     return (
@@ -31,7 +31,16 @@ Sofia heard a word she was not sure of. She asked “Wait. What Is consent?”
 
         </div>
         <img src = {Image}/>
-
+        <Link to= "/page17">
+        <Button >
+          Prev Page
+        </Button>
+        </Link>
+        <Link to= "/page19">
+        <Button>
+          Next Page
+        </Button>
+        </Link>
 
 
       </div>

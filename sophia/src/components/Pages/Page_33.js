@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
-
+import { Link } from "react-router-dom";
 class Page33 extends Component {
   render() {
     return (
@@ -38,7 +38,16 @@ The Molnar
 We couldn't have done it without you! 
 
         </div>
-
+        <Link to= "/page1">
+        <Button >
+          Prev Page
+        </Button>
+        </Link>
+        <Link to= "/About">
+        <Button>
+          Next Page
+        </Button>
+        </Link>
 
 
       </div>

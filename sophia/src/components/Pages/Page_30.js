@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
-
+import { Link } from "react-router-dom";
 class Page30 extends Component {
   render() {
     return (
@@ -31,7 +31,16 @@ Microscope: This is a tool that people use to allow them to see very small thing
 Observation: Watching and taking notes about how a treatment or intervention is working in a person. Scientists can learn a lot from observing. They can see how something works from month to month. They can see how someone is feeling before a treatment and after a treatment. 
 
         </div>
-
+        <Link to= "/page29">
+        <Button >
+          Prev Page
+        </Button>
+        </Link>
+        <Link to= "/page31">
+        <Button>
+          Next Page
+        </Button>
+        </Link>
 
 
       </div>

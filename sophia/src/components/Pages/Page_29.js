@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
-
+import { Link } from "react-router-dom";
 class Page29 extends Component {
   render() {
     return (
@@ -32,7 +32,16 @@ Consent: A person's agreement to be part of a study. If you are a kid or a teena
 Data: The information collected in a study. This can be numbers like age and height or words, like about how you feel. It can even be the notes scientists take from observations. 
 
         </div>
-
+        <Link to= "/page28">
+        <Button >
+          Prev Page
+        </Button>
+        </Link>
+        <Link to= "/page30">
+        <Button>
+          Next Page
+        </Button>
+        </Link>
 
 
       </div>
