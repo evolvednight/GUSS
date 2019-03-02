@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
-
+import { Link } from "react-router-dom";
 class Page31 extends Component {
   render() {
     return (
@@ -31,7 +31,16 @@ Sample: A sample can mean a small amount of something. It can also mean a group 
 Science Experiment: Anything that you do to help you answer a question. This may involve using your eyes, your ears, your nose, and your sense of touch to learn about something. It involves careful planning. It also involves writing everything down. This helps the scientists remember everything that happens. 
 
         </div>
-
+        <Link to= "/page30">
+        <Button >
+          Prev Page
+        </Button>
+        </Link>
+        <Link to= "/page32">
+        <Button>
+          Next Page
+        </Button>
+        </Link>
 
 
       </div>

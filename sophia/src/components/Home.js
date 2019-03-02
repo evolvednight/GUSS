@@ -9,9 +9,11 @@ class Home extends Component {
     return (
       <div className="home">
         <div className="about-card">
+        <Link to= "/page1">
           <Button variant="danger" className="btn_1">
             START STORY
           </Button>
+          </Link>
           <Button variant="warning" className="btn_2">
             SKIP PAGES
           </Button>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
-
+import { Link } from "react-router-dom";
 class Page28 extends Component {
   render() {
     return (
@@ -52,7 +52,16 @@ Start
         <div className="text">
         Game
         </div>
-
+        <Link to= "/page27">
+        <Button >
+          Prev Page
+        </Button>
+        </Link>
+        <Link to= "/page29">
+        <Button>
+          Next Page
+        </Button>
+        </Link>
 
 
       </div>

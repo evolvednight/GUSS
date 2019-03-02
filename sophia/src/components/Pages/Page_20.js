@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
-
+import { Link } from "react-router-dom";
 class Page20 extends Component {
   render() {
     return (
@@ -31,7 +31,16 @@ Complete the crossword below
         <div className="text">
         Game
         </div>
-
+        <Link to= "/page19">
+        <Button >
+          Prev Page
+        </Button>
+        </Link>
+        <Link to= "/page21">
+        <Button>
+          Next Page
+        </Button>
+        </Link>
 
 
       </div>

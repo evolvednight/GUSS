@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
-
+import { Link } from "react-router-dom";
 class Page11 extends Component {
   render() {
     return (
@@ -33,7 +33,16 @@ Practice taking a survey! Write your answers to the questions.
 6. If yes, what kinds of animals do you have?
 
         </div>
-
+        <Link to= "/page10">
+        <Button >
+          Prev Page
+        </Button>
+        </Link>
+        <Link to= "/page12">
+        <Button>
+          Next Page
+        </Button>
+        </Link>
 
 
       </div>

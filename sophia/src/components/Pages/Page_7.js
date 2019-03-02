@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Button, Navbar } from "react-bootstrap";
 import Image from "./Sofia_Images/Page_7.JPG";
+import { Link } from "react-router-dom";
 
 class Page7 extends Component {
   render() {
@@ -31,7 +32,16 @@ Sofia needed to think about all of this, and she wasn't sure she could rememberâ
 
         </div>
         <img src = {Image}/>
-
+        <Link to= "/page6">
+        <Button >
+          Prev Page
+        </Button>
+        </Link>
+        <Link to= "/page8">
+        <Button>
+          Next Page
+        </Button>
+        </Link>
 
 
       </div>
