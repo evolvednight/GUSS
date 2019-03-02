@@ -7,11 +7,7 @@ class Page7 extends Component {
   render() {
     return (
       <div className="Page7">
-        <div className="text">Sofia</div>
-
-        <div className="text">Learns</div>
-
-        <div className="text">Research</div>
+       
 
         <div className="text">
           Dr. Q. said “Great question! A study is a lot like a science

@@ -5,11 +5,7 @@ class Page28 extends Component {
   render() {
     return (
       <div className="Page28">
-        <div className="text">Sofia</div>
-
-        <div className="text">Learns</div>
-
-        <div className="text">Research</div>
+       
 
         <div className="text">
           Walk with Sofia Through the Research Process Finish Sofia and her

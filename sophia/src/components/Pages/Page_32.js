@@ -6,11 +6,7 @@ class Page32 extends Component {
   render() {
     return (
       <div className="Page32">
-        <div className="text">Sofia</div>
-
-        <div className="text">Learns</div>
-
-        <div className="text">Research</div>
+       
 
         <div className="text">
           Scientist or Researcher: A person who tries to find answers to

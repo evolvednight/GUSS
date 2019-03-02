@@ -5,11 +5,7 @@ class Page21 extends Component {
   render() {
     return (
       <div className="Page21">
-        <div className="text">Sofia</div>
-
-        <div className="text">Learns</div>
-
-        <div className="text">Research</div>
+       
 
         <div className="text">
           Across 3. Watching and taking notes about how a treatment is working

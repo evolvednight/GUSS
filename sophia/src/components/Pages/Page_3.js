@@ -6,11 +6,7 @@ class Page3 extends Component {
   render() {
     return (
       <div className="Page3">
-        <div className="text">Sofia</div>
-
-        <div className="text">Learns</div>
-
-        <div className="text">Research</div>
+       
 
         <div className="text">
           Dr. Wilson said, “I would like you to meet someone who can tell you

@@ -6,11 +6,7 @@ class Page16 extends Component {
   render() {
     return (
       <div className="Page16">
-        <div className="text">Sofia</div>
-
-        <div className="text">Learns</div>
-
-        <div className="text">Research</div>
+      
 
         <div className="text">
           Scientists often try to figure out how two different medicines are
