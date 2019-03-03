@@ -8,7 +8,7 @@ class Navigation extends Component {
     return (
       <Navbar fixed="top" variant="dark" className="navbar">
         <div className="logo">
-          <Link to="/">SOPHIA'S STORYBOOK</Link>
+          <Link to="/" style={{textDecoration: 'none'}}>SOPHIA'S STORYBOOK</Link>
         </div>
       </Navbar>
     );

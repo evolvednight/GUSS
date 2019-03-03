@@ -18,10 +18,10 @@ class Page26 extends Component {
         </div>
 
         <div className="text">Game</div>
-        <Link to="/page25">
+        <Link to="/page25" style={{textDecoration: 'none'}}>
           <Button>Prev Page</Button>
         </Link>
-        <Link to="/page27">
+        <Link to="/page27" style={{textDecoration: 'none'}}>
           <Button>Next Page</Button>
         </Link>
       </div>

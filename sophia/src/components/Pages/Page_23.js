@@ -22,10 +22,10 @@ class Page23 extends Component {
           help us with that too."
         </div>
         <img src={Image} alt="" />
-        <Link to="/page22">
+        <Link to="/page22" style={{textDecoration: 'none'}}>
           <Button>Prev Page</Button>
         </Link>
-        <Link to="/page24">
+        <Link to="/page24" style={{textDecoration: 'none'}}> 
           <Button>Next Page</Button>
         </Link>
       </div>

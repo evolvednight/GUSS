@@ -15,10 +15,10 @@ class Page11 extends Component {
           (circle your answer) Yes No 6. If yes, what kinds of animals do you
           have?
         </div>
-        <Link to="/page10">
+        <Link to="/page10" style={{textDecoration: 'none'}}>
           <Button>Prev Page</Button>
         </Link>
-        <Link to="/page12">
+        <Link to="/page12" style={{textDecoration: 'none'}}>
           <Button>Next Page</Button>
         </Link>
       </div>

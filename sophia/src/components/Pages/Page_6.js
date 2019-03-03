@@ -22,10 +22,10 @@ class Page6 extends Component {
           “So what IS a research study?" was the first thing Sofia blurted out.
         </div>
         <img src={Image} alt="" />
-        <Link to="/page5">
+        <Link to="/page5" style={{textDecoration: 'none'}}>
           <Button>Prev Page</Button>
         </Link>
-        <Link to="/page7">
+        <Link to="/page7" style={{textDecoration: 'none'}}>
           <Button>Next Page</Button>
         </Link>
       </div>

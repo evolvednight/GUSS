@@ -23,10 +23,10 @@ class Page19 extends Component {
           study is called.”
         </div>
         <img src={Image} alt="" />
-        <Link to="/page18">
+        <Link to="/page18" style={{textDecoration: 'none'}}>
           <Button>Prev Page</Button>
         </Link>
-        <Link to="/page20">
+        <Link to="/page20" style={{textDecoration: 'none'}}>
           <Button>Next Page</Button>
         </Link>
       </div>

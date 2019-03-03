@@ -32,10 +32,10 @@ class Page30 extends Component {
           can see how something works from month to month. They can see how
           someone is feeling before a treatment and after a treatment.
         </div>
-        <Link to="/page29">
+        <Link to="/page29" style={{textDecoration: 'none'}}>
           <Button>Prev Page</Button>
         </Link>
-        <Link to="/page31">
+        <Link to="/page31" style={{textDecoration: 'none'}}>
           <Button>Next Page</Button>
         </Link>
       </div>

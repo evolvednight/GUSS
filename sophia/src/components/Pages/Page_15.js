@@ -16,10 +16,10 @@ class Page15 extends Component {
           anymore. It's great!'
         </div>
         <img src={Image} alt="" />
-        <Link to="/page14">
+        <Link to="/page14" style={{textDecoration: 'none'}}>  
           <Button>Prev Page</Button>
         </Link>
-        <Link to="/page16">
+        <Link to="/page16" style={{textDecoration: 'none'}}>
           <Button>Next Page</Button>
         </Link>
       </div>

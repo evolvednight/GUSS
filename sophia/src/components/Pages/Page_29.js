@@ -30,10 +30,10 @@ class Page29 extends Component {
           numbers like age and height or words, like about how you feel. It can
           even be the notes scientists take from observations.
         </div>
-        <Link to="/page28">
+        <Link to="/page28" style={{textDecoration: 'none'}}>
           <Button>Prev Page</Button>
         </Link>
-        <Link to="/page30">
+        <Link to="/page30" style={{textDecoration: 'none'}}>
           <Button>Next Page</Button>
         </Link>
       </div>

@@ -8,7 +8,7 @@ class Home extends Component {
     return (
       <div className="home">
         <div className="about-card">
-          <Link to="/Page1">
+          <Link to="/Page1" style={{textDecoration: 'none'}}>
             <Button variant="danger" className="btn_1">
               START STORY
             </Button>
@@ -16,12 +16,12 @@ class Home extends Component {
           <Button variant="warning" className="btn_2">
             SKIP PAGES
           </Button>
-          <Link to="/About">
+          <Link to="/About" style={{textDecoration: 'none'}}>
             <Button variant="primary" className="btn_3">
               ABOUT
             </Button>
           </Link>
-          <Link to="/Help">
+          <Link to="/Help" style={{textDecoration: 'none'}}>
             <Button variant="info" className="btn_4">
               Help
             </Button>

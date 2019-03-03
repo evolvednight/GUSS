@@ -17,10 +17,10 @@ class Page17 extends Component {
           11. Butterfly 12. Bird on Sofia's bench
         </div>
         <img src={Image} alt="" />
-        <Link to="/page16">
+        <Link to="/page16" style={{textDecoration: 'none'}}>
           <Button>Prev Page</Button>
         </Link>
-        <Link to="/page18">
+        <Link to="/page18" style={{textDecoration: 'none'}}>
           <Button>Next Page</Button>
         </Link>
       </div>

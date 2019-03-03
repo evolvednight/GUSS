@@ -19,10 +19,10 @@ class Page3 extends Component {
           pig!
         </div>
         <img src={Image} alt="" />
-        <Link to="/page2">
+        <Link to="/page2" style={{textDecoration: 'none'}}>
           <Button>Prev Page</Button>
         </Link>
-        <Link to="/page4">
+        <Link to="/page4" style={{textDecoration: 'none'}}>
           <Button>Next Page</Button>
         </Link>
       </div>

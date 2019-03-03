@@ -17,10 +17,10 @@ class Page2 extends Component {
           tell us a little more?”
         </div>
         <img src={Image} alt="" />
-        <Link to="/page1">
+        <Link to="/page1" style={{textDecoration: 'none'}}>
           <Button>Prev Page</Button>
         </Link>
-        <Link to="/page3">
+        <Link to="/page3" style={{textDecoration: 'none'}}>
           <Button>Next Page</Button>
         </Link>
       </div>

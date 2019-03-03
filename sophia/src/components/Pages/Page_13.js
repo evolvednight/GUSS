@@ -17,10 +17,10 @@ class Page13 extends Component {
           how much you weigh?____ pounds What size shoe are you?
         </div>
         <img src={Image} alt="" />
-        <Link to="/page12">
+        <Link to="/page12" style={{textDecoration: 'none'}}>
           <Button>Prev Page</Button>
         </Link>
-        <Link to="/page14">
+        <Link to="/page14" style={{textDecoration: 'none'}}>
           <Button>Next Page</Button>
         </Link>
       </div>

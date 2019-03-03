@@ -31,10 +31,10 @@ class Page31 extends Component {
           everything down. This helps the scientists remember everything that
           happens.
         </div>
-        <Link to="/page30">
+        <Link to="/page30" style={{textDecoration: 'none'}}>
           <Button>Prev Page</Button>
         </Link>
-        <Link to="/page32">
+        <Link to="/page32" style={{textDecoration: 'none'}}>
           <Button>Next Page</Button>
         </Link>
       </div>

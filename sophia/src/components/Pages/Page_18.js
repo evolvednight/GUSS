@@ -18,10 +18,10 @@ class Page18 extends Component {
           not sure of. She asked “Wait. What Is consent?”
         </div>
         <img src={Image} alt="" />
-        <Link to="/page17">
+        <Link to="/page17" style={{textDecoration: 'none'}}>
           <Button>Prev Page</Button>
         </Link>
-        <Link to="/page19">
+        <Link to="/page19" style={{textDecoration: 'none'}}>
           <Button>Next Page</Button>
         </Link>
       </div>

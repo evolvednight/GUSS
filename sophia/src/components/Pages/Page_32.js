@@ -21,10 +21,10 @@ class Page32 extends Component {
           a symptom of asthma, but it can also be because of other things.
         </div>
         <img src={Image} alt="" />
-        <Link to="/page31">
+        <Link to="/page31" style={{textDecoration: 'none'}}>
           <Button>Prev Page</Button>
         </Link>
-        <Link to="/page33">
+        <Link to="/page33" style={{textDecoration: 'none'}}>
           <Button>Next Page</Button>
         </Link>
       </div>

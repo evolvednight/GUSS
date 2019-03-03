@@ -19,10 +19,10 @@ class Page27 extends Component {
           like to do that! I want to help change the world!”
         </div>
         <img src={Image} alt="" />
-        <Link to="/page26">
+        <Link to="/page26" style={{textDecoration: 'none'}}>
           <Button>Prev Page</Button>
         </Link>
-        <Link to="/page28">
+        <Link to="/page28" style={{textDecoration: 'none'}}>
           <Button>Next Page</Button>
         </Link>
       </div>
