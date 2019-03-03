@@ -32,10 +32,10 @@ class Page31 extends Component {
           happens.
         </div>
         <Link to="/page30" style={{textDecoration: 'none'}}>
-          <Button>Prev Page</Button>
+          <Button className="leftBtn">Prev Page</Button>
         </Link>
         <Link to="/page32" style={{textDecoration: 'none'}}>
-          <Button>Next Page</Button>
+          <Button className="rightBtn">Next Page</Button>
         </Link>
       </div>
     );

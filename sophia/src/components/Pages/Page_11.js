@@ -16,10 +16,10 @@ class Page11 extends Component {
           have?
         </div>
         <Link to="/page10" style={{textDecoration: 'none'}}>
-          <Button>Prev Page</Button>
+          <Button className="leftBtn">Prev Page</Button>
         </Link>
         <Link to="/page12" style={{textDecoration: 'none'}}>
-          <Button>Next Page</Button>
+          <Button className="rightBtn">Next Page</Button>
         </Link>
       </div>
     );

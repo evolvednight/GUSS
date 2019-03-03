@@ -15,10 +15,10 @@ class Page12 extends Component {
         <img src={Image1} alt="" />
         <img src={Image} alt="" />
         <Link to="/page11" style={{textDecoration: 'none'}}>
-          <Button>Prev Page</Button>
+          <Button className="leftBtn">Prev Page</Button>
         </Link>
         <Link to="/page13" style={{textDecoration: 'none'}}>
-          <Button>Next Page</Button>
+          <Button className="rightBtn">Next Page</Button>
         </Link>
       </div>
     );

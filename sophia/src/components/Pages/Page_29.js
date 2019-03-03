@@ -31,10 +31,10 @@ class Page29 extends Component {
           even be the notes scientists take from observations.
         </div>
         <Link to="/page28" style={{textDecoration: 'none'}}>
-          <Button>Prev Page</Button>
+          <Button className="leftBtn">Prev Page</Button>
         </Link>
         <Link to="/page30" style={{textDecoration: 'none'}}>
-          <Button>Next Page</Button>
+          <Button className="rightBtn">Next Page</Button>
         </Link>
       </div>
     );

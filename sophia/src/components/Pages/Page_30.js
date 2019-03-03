@@ -33,10 +33,10 @@ class Page30 extends Component {
           someone is feeling before a treatment and after a treatment.
         </div>
         <Link to="/page29" style={{textDecoration: 'none'}}>
-          <Button>Prev Page</Button>
+          <Button className="leftBtn">Prev Page</Button>
         </Link>
         <Link to="/page31" style={{textDecoration: 'none'}}>
-          <Button>Next Page</Button>
+          <Button className="rightBtn">Next Page</Button>
         </Link>
       </div>
     );

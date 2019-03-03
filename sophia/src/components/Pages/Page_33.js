@@ -15,10 +15,10 @@ class Page33 extends Component {
           done it without you!
         </div>
         <Link to="/page1">
-          <Button>Prev Page</Button>
+          <Button className="leftBtn">Prev Page</Button>
         </Link>
         <Link to="/About">
-          <Button>Next Page</Button>
+          <Button className="rightBtn">Next Page</Button>
         </Link>
       </div>
     );

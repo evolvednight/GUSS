@@ -7,3 +7,17 @@
   padding-right: 200px;
   padding-top: 7%;
 }
+
+.leftBtn {
+  position:absolute;
+  transition: .5s ease;
+  top: 50%;
+  left: 0%;
+}
+
+.rightBtn {
+  position:absolute;
+  transition: .5s ease;
+  top: 50%;
+  right: 0%;
+}
