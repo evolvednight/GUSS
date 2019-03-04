@@ -18,6 +18,10 @@
 .home-card {
   margin-top: 2rem;
   transition: 500ms;
+  padding: 2rem 2rem 2rem 2rem;
+  text-align: center;
+  font-size: 20px;
+  text-align: left;
 }
 
 .home-card:hover {
