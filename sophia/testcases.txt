@@ -1,0 +1,22 @@
+TEST CASES:
+Testing Scripts
+
+Shell:
+-running using npm install and npm start will show the webpage when in sophia directory
+-a local host on a browser should pop up and show the homepage
+
+WebApp Buttons:
+-pressing start story should lead to the first page of sophia
+-pressing about should bring you to an about page
+-pressing help should bring you to an help page
+-pressing the top navigation with the word Sophia storybook will take you back to the first page
+-all pages have a prev and next page button that works and should navigate to the prev/next page
+-first page prev button should navigate to home page by clicking
+-last page next button should navigate to about page by clicking
+-pressing anywhere else on the page that is not a button should give no interaction
+
+WebApp Content:
+-all pages are routed correctly check by looking at the web link each navigation
+-all images are displaying correctly, check by loking at image on each page
+-all pages shows same navigation bar, check by going through each page and see if the same navigation bar appears
+
