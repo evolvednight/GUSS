@@ -34,6 +34,7 @@ class Page9 extends Component {
         <Link to="/page10">
           <Button>Next Page</Button>
         </Link>
+        <Button>sound</Button>
       </div>
     );
   }
