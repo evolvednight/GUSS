@@ -28,6 +28,7 @@ class Page23 extends Component {
         <Link to="/page24" style={{textDecoration: 'none'}}> 
           <Button className="rightBtn">Next Page</Button>
         </Link>
+        <Button>sound</Button>
       </div>
     );
   }
