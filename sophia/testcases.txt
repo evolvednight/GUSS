@@ -17,6 +17,6 @@ WebApp Buttons:
 
 WebApp Content:
 -all pages are routed correctly check by looking at the web link each navigation
--all images are displaying correctly, check by loking at image on each page
+-all images are displaying correctly, check by looking at image on each page
 -all pages shows same navigation bar, check by going through each page and see if the same navigation bar appears
 
