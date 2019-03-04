@@ -11,8 +11,8 @@ WebApp Buttons:
 -pressing help should bring you to an help page
 -pressing the top navigation with the word Sophia storybook will take you back to the first page
 -all pages have a prev and next page button that works and should navigate to the prev/next page
--first page prev button should navigate to home page
--last page next button should navigate to about page
+-first page prev button should navigate to home page by clicking
+-last page next button should navigate to about page by clicking
 -pressing anywhere else on the page that is not a button should give no interaction
 
 WebApp Content:
