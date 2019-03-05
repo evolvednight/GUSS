@@ -16,10 +16,18 @@ Feature: Create about page
 Feature: Create help page
 -pressing help should bring you to an help page
 
+Feature: Add functionality for the buttons on the Home Page
 -pressing the top navigation with the word Sophia storybook will take you back to the first page
+
+Feature: Add next page and previous page button to all the storybook pages
 -all pages have a prev and next page button that works and should navigate to the prev/next page
+
+Feature: On the first page, we should have a button that takes you to Home page
 -first page prev button should navigate to home page by clicking
+
+Feaure: On the last page, we should have a button that takes you back to the about page
 -last page next button should navigate to about page by clicking
+
 -pressing anywhere else on the page that is not a button should give no interaction
 ---------------------------------------------------------------------------------------------------------------------------------
 WebApp Content:
@@ -30,5 +38,6 @@ Feature: Set up storybook pages
 -all images are displaying correctly, check by looking at image on each page. 
 Note: If a page does not have an image, then the actual book did not have an image on that page.
 
+Feature: Set up storybook pages + Create a Home Page
 -all pages shows same navigation bar, check by going through each page and see if the same navigation bar appears
 
