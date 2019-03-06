@@ -23,7 +23,7 @@ class Page9 extends Component {
           each week that you are in a study. All of this information is called
           data.”
         </div>
-        <img src={Image} alt="" />
+        <img src={Image} alt="image" />
         <Link to="/page8" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

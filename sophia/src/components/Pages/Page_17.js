@@ -16,7 +16,7 @@ class Page17 extends Component {
           with ball instead of truck 9. No kid on slide 10. Flower near Michael
           11. Butterfly 12. Bird on Sofia's bench
         </div>
-        <img src={Image} alt="" />
+        <img src={Image} alt="image" />
         <Link to="/page16" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

@@ -20,7 +20,7 @@ class Page32 extends Component {
           happens because the tubes in the lungs are too narrow. Wheezing can be
           a symptom of asthma, but it can also be because of other things.
         </div>
-        <img src={Image} alt="" />
+        <img src={Image} alt="image" />
         <Link to="/page31" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

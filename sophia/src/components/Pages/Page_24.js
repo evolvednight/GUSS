@@ -19,7 +19,7 @@ class Page24 extends Component {
           worried about being too busy? Sofia nodded, “Yes. And I'm also worried
           about how to tell my friends about this when they ask about it.”
         </div>
-        <img src={Image} alt="" />
+        <img src={Image} alt="image" />
         <Link to="/page23" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

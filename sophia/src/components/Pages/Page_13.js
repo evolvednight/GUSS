@@ -16,7 +16,7 @@ class Page13 extends Component {
           yourself? Do you know how tall you are?___feet___Inches Do you know
           how much you weigh?____ pounds What size shoe are you?
         </div>
-        <img src={Image} alt="" />
+        <img src={Image} alt="image" />
         <Link to="/page12" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

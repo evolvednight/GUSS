@@ -21,7 +21,7 @@ class Page25 extends Component {
           to want to hear all about this too, Sofia! Maybe we can bring the book
           home today and you can tell her all about it."
         </div>
-        <img src={Image} alt="" />
+        <img src={Image} alt="image" />
         <Link to="/page24" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

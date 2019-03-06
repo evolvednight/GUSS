@@ -15,7 +15,7 @@ class Page15 extends Component {
           my shoes the new way, they stay tied all day. Now I don't trip on them
           anymore. It's great!'
         </div>
-        <img src={Image} alt="" />
+        <img src={Image} alt="image" />
         <Link to="/page14" style={{textDecoration: 'none'}}>  
           <Button className="leftBtn">Prev Page</Button>
         </Link>

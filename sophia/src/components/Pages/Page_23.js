@@ -21,7 +21,7 @@ class Page23 extends Component {
           we know you're healthy inside and out! There are other tests that will
           help us with that too."
         </div>
-        <img src={Image} alt="" />
+        <img src={Image} alt="image" />
         <Link to="/page22" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

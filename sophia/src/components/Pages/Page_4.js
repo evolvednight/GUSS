@@ -17,7 +17,7 @@ class Page4 extends Component {
           Is that okay with you?” said Dr. Q. Sofia's dad said, “It's nice to
           meet you, too. We would like to hear more about it. Thank you."
         </div>
-        <img src={Image} alt="" />
+        <img src={Image} alt="image" />
         <Link to="/page3" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

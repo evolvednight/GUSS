@@ -12,8 +12,8 @@ class Page12 extends Component {
           Sometimes scientists ask you to give a sample of blood to understand
           what's going on inside your body.
         </div>
-        <img src={Image1} alt="" />
-        <img src={Image} alt="" />
+        <img src={Image1} alt="image" />
+        <img src={Image} alt="image" />
         <Link to="/page11" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>
