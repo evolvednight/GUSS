@@ -32,12 +32,9 @@ Feaure: On the last page, we should have a button that takes you back to the abo
 ---------------------------------------------------------------------------------------------------------------------------------
 WebApp Content:
 -all pages are routed correctly check by looking at the web link each navigation
-
+-all images are displaying correctly, check by looking at image on each page
 Feature: Set up storybook pages
 -all texts are displaying correctly, check by reading text on each page.
 -all images are displaying correctly, check by looking at image on each page. 
 Note: If a page does not have an image, then the actual book did not have an image on that page.
-
-Feature: Set up storybook pages + Create a Home Page
--all pages shows same navigation bar, check by going through each page and see if the same navigation bar appears
 
