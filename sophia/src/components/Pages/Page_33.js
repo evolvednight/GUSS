@@ -20,7 +20,7 @@ class Page33 extends Component {
         <Link to="/About">
           <Button className="rightBtn">Next Page</Button>
         </Link>
-        <Button>sound</Button>
+        <Button className ="sound">sound</Button>
       </div>
     );
   }
