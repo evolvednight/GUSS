@@ -11,13 +11,20 @@
 .leftBtn {
   position:absolute;
   transition: .5s ease;
-  top: 50%;
+  bottom: 0%;
   left: 0%;
 }
 
 .rightBtn {
   position:absolute;
   transition: .5s ease;
-  top: 50%;
+  bottom: 0%;
   right: 0%;
+}
+.sound{
+    position:absolute;
+    transition: .5s ease;
+  bottom: 0%;
+  right: 10%;
+  
 }
