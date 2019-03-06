@@ -22,7 +22,7 @@ class Page19 extends Component {
           then you'll be called a participant which is what a person who is in a
           study is called.”
         </div>
-        <img src={Image} alt="" />
+        <img src={Image} alt="image" />
         <Link to="/page18" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

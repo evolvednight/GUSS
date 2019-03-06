@@ -1,11 +1,13 @@
 .text {
   font-family: verdana;
   font-size: 30px;
+  font-size: 4vw;
+  font-size: 4vh;
   font-weight: 200;
   text-align: left;
   padding-left: 200px;
   padding-right: 200px;
-  padding-top: 7%;
+  padding-top: 10%;
 }
 
 .leftBtn {
@@ -21,6 +23,7 @@
   bottom: 0%;
   right: 0%;
 }
+<<<<<<< HEAD
 .sound{
     position:absolute;
     transition: .5s ease;
@@ -29,3 +32,6 @@
   border-radius: 40%;
   opacity: 0.3;
 }
+=======
+
+>>>>>>> Pages

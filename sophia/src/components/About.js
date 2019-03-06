@@ -7,7 +7,6 @@ class About extends Component {
     return (
       <div className="about">
         <div className="about-card">
-          <p>Cover Page</p>
           <p>
             Sofia Learns About Research Written by Renee Cadzow, PhD,Alexandra
             Marrone, and Teresa Quattrin, MD Illustrated by Isabella Bannerman

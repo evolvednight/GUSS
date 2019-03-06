@@ -17,7 +17,7 @@ class Page18 extends Component {
           you AND your parents give your consent.” Sofia heard a word she was
           not sure of. She asked “Wait. What Is consent?”
         </div>
-        <img src={Image} alt="" />
+        <img src={Image} alt="image" />
         <Link to="/page17" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

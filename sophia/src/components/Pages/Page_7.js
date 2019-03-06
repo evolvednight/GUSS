@@ -22,7 +22,7 @@ class Page7 extends Component {
           to take better care of people!" Sofia needed to think about all of
           this, and she wasn't sure she could remember…
         </div>
-        <img src={Image} alt="" />
+        <img src={Image} alt="image" />
         <Link to="/page6" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

@@ -16,7 +16,7 @@ class Page2 extends Component {
           anything. Then she looked at her dad. Her dad said, “Maybe. Can you
           tell us a little more?”
         </div>
-        <img src={Image} alt="" />
+        <img src={Image} alt="image" />
         <Link to="/page1" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

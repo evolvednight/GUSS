@@ -23,7 +23,7 @@ class Page14 extends Component {
           a kind of study where some people try a new medicine and other people
           try an old one. This is to see if the new one works better.”
         </div>
-        <img src={Image} alt="" />
+        <img src={Image} alt="image" />
         <Link to="/page13" style={{textDecoration: 'none'}} >
           <Button className="leftBtn">Prev Page</Button>
         </Link>

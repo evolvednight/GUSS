@@ -18,7 +18,7 @@ class Page3 extends Component {
           movies with mad scientists and wild experiments. She was not a guinea
           pig!
         </div>
-        <img src={Image} alt="" />
+        <img src={Image} alt="image" />
         <Link to="/page2" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

@@ -13,7 +13,7 @@ class Page10 extends Component {
           group of people come together to talk about a topic that the scientist
           is interested in learning more about.
         </div>
-        <img src={Image} alt="" />
+        <img src={Image} alt="image" />
         <Link to="/page9" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

@@ -18,7 +18,7 @@ class Page27 extends Component {
           study?” Dr. Q asked Sofia and her dad. Sofia said, “I think I would
           like to do that! I want to help change the world!”
         </div>
-        <img src={Image} alt="" />
+        <img src={Image} alt="image" />
         <Link to="/page26" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>
