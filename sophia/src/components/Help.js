@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Help.css";
-import { CardDeck, Card } from "react-bootstrap";
+import { CardColumns, Card } from "react-bootstrap";
 
 class Help extends Component {
   render() {
@@ -8,15 +8,36 @@ class Help extends Component {
       <div className="help">
         {/* 3 helper Cards */}
 
-        <CardDeck className="helper-cards">
+        <CardColumns className="helper-cards">
           {/* 1st helper Card */}
 
           <Card className="helper">
             <Card.Header className="helper-header helper-header-1">
-              START STORY
+              ACCESSIBILITY WITH KEYBOARD
             </Card.Header>
             <Card.Body className="helper-1">
-              <Card.Text>PRESS THIS BUTTON TO START THE STORYBOOK</Card.Text>
+              <Card.Text>
+                ALL THE BUTTONS ON THIS WEB APP ARE ACCESSIBLE WITH A KEYOARD.
+                USING THE ARROWKEYS ON YOUR KEYBOARD, YOU CAN NAVIGATE THROUGH
+                THE BUTTONS AND BY PRESSING "enter" ON YOUR KEYBOARD YOU CAN
+                ACCESS THE BUTTONS. YOU CAN NOTICE THE BUTTON COLORS CHANGING TO
+                GREEN TO SHOW THAT YOU ARE HIGHLIGHTING A CERTAIN BUTTON.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+
+          <Card className="helper">
+            <Card.Header className="helper-header helper-header-1">
+              START STORY BUTTON
+            </Card.Header>
+            <Card.Body className="helper-1">
+              <Card.Text>
+                CLICK THIS BUTTON TO START THE STORYBOOK. OR IF THE BUTTON IS
+                HIGHLIGHTED (THE COLOR WILL TURN GREEN) YOU CAN PRESS "enter" TO
+                ACCESS IT. IF THE BUTTON IS NOT HIGHLIGHTED AND YOU CAN'T ACCESS
+                IT USING YOUR KEYBOARD, PRESS THE "tab" BUTTON ON YOUR KEYBOARD
+                TWICE TO HIGHLIGHT THIS BUTTON
+              </Card.Text>
             </Card.Body>
           </Card>
 
@@ -24,10 +45,12 @@ class Help extends Component {
 
           <Card className="helper">
             <Card.Header className="helper-header helper-header-2">
-              SKIP PAGES
+              SKIP PAGES BUTTON
             </Card.Header>
             <Card.Body className="helper-2">
-              <Card.Text>PRESS THIS BUTTON TO SKIP TO ACTIVITIES</Card.Text>
+              <Card.Text>
+                CLICK OR PRESS THIS BUTTON TO SKIP TO ACTIVITIES
+              </Card.Text>
             </Card.Body>
           </Card>
 
@@ -49,15 +72,55 @@ class Help extends Component {
 
           <Card className="helper">
             <Card.Header className="helper-header helper-header-4">
-              ARROWS
+              NEXT PAGE BUTTON
             </Card.Header>
             <Card.Body className="helper-4">
               <Card.Text>
-                THESE BUTTONS HELP YOU NAVIGATE TO THE NEXT AND PREVIOUS PAGES
+                CLICKING OR PRESSING THIS BUTTON WILL TAKE YOU TO THE NEXT PAGE.
+                ON THE GAME PAGES, IT WILL ONLY TAKE YOU TO THE NEXT PAGE AFTER
+                FINISHING THE GAME
               </Card.Text>
             </Card.Body>
           </Card>
-        </CardDeck>
+
+          <Card className="helper">
+            <Card.Header className="helper-header helper-header-4">
+              PREV PAGE BUTTON
+            </Card.Header>
+            <Card.Body className="helper-4">
+              <Card.Text>
+                CLICKING OR PRESSING THIS BUTTON WILL TAKE YOU TO THE PREVIOUS
+                PAGE. IF YOU CAN'T ACCES ANY OF THE BUTTONS ON THE STORYBOOK
+                PAGES WITH YOUR KEYBOARD, PRESS THE "tab" KEY ON YOUR KEYBOARD
+                ONCE. THIS BUTTON SHOULD BE HIGHLIGHTED
+              </Card.Text>
+            </Card.Body>
+          </Card>
+
+          <Card className="helper">
+            <Card.Header className="helper-header helper-header-2">
+              SOFIA'S STORYBOOK BUTTON
+            </Card.Header>
+            <Card.Body className="helper-2">
+              <Card.Text>
+                YOU CAN CLICK OR PRESS THIS BUTTON ANYTIME TO TAKE YOU BACK TO
+                THE HOMEPAGE.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+
+          <Card className="helper">
+            <Card.Header className="helper-header helper-header-3">
+              "backspace" BUTTON ON YOUR KEYBOARD
+            </Card.Header>
+            <Card.Body className="helper-3">
+              <Card.Text>
+                YOU CAN PRESS THE "backspace" BUTTON ON YOUR KEYBOARD ANYTIME TO
+                TAKE YOU BACK TO THE PREVIOUS PAGE
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </CardColumns>
       </div>
     );
   }
