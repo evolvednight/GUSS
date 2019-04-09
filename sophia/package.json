@@ -1,10 +1,13 @@
 {
   "name": "sophia",
   "version": "0.1.0",
+  "main": "index.js",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "cors": "^2.8.5",
     "enzyme": "^3.9.0",
+    "express": "^4.16.4",
     "puppeteer": "^1.13.0",
     "react": "^16.8.1",
     "react-bootstrap": "^1.0.0-beta.5",
