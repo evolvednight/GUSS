@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd sophia && npm start",
     "heroku-postbuild": "cd sophia && npm install && npm run-script build"
   },
   "repository": {
