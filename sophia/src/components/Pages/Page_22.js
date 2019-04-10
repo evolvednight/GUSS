@@ -98,6 +98,7 @@ class Page22 extends Component {
           <Button
           onClick = {this.check}
           >
+          Submit
           </Button>
         </Form>
 
