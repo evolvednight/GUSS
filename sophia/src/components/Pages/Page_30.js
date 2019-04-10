@@ -2,11 +2,28 @@ import React, { Component } from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 class Page30 extends Component {
+  handleKeyPress = e => {
+    let buttonName = e.target.className;
+    let buttonNameSplit = buttonName.split(" ");
+    if (e.keyCode === 39) {
+      if (buttonNameSplit[0] === "leftBtn") {
+        this.refs.sound.focus();
+      }
+      if (buttonNameSplit[0] === "sound") {
+        this.refs.rightBtn.focus();
+      }
+    } else if (e.keyCode === 37) {
+      if (buttonNameSplit[0] === "rightBtn") {
+        this.refs.sound.focus();
+      }
+      if (buttonNameSplit[0] === "sound") {
+        this.refs.leftBtn.focus();
+      }
+    }
+  };
   render() {
     return (
       <div className="Page30">
-     
-
         <div className="text">
           Focus Group: When a small group of people come together to talk about
           a topic that the scientist is interested in learning about.
@@ -32,13 +49,28 @@ class Page30 extends Component {
           can see how something works from month to month. They can see how
           someone is feeling before a treatment and after a treatment.
         </div>
-        <Link to="/page29" style={{textDecoration: 'none'}}>
-          <Button className="leftBtn">Prev Page</Button>
+        <Link to="/page29" style={{ textDecoration: "none" }}>
+          <Button
+            onKeyDown={this.handleKeyPress}
+            ref="leftBtn"
+            className="leftBtn"
+          >
+            Prev Page
+          </Button>
         </Link>
-        <Link to="/page31" style={{textDecoration: 'none'}}>
-          <Button className="rightBtn">Next Page</Button>
+        <Link to="/page31" style={{ textDecoration: "none" }}>
+          <Button
+            onKeyDown={this.handleKeyPress}
+            autoFocus
+            ref="rightBtn"
+            className="rightBtn"
+          >
+            Next Page
+          </Button>
         </Link>
-        <Button className ="sound">sound</Button>
+        <Button onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
       </div>
     );
   }

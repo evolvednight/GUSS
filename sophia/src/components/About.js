@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Card } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import "./About.css";
+import { Link } from "react-router-dom";
 
 class About extends Component {
   render() {
@@ -31,6 +32,11 @@ class About extends Component {
             book, please contact CTSI Administration 875 Ellicott Street
             Buffalo, NY 14203 716-829-2272
           </p>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <Button autoFocus ref="rightBtn" className="rightBtn">
+              HOME PAGE
+            </Button>
+          </Link>
         </div>
       </div>
     );

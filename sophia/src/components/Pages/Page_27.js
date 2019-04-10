@@ -3,11 +3,28 @@ import { Button } from "react-bootstrap";
 import Image from "./Sofia_Images/Page_27.JPG";
 import { Link } from "react-router-dom";
 class Page27 extends Component {
+  handleKeyPress = e => {
+    let buttonName = e.target.className;
+    let buttonNameSplit = buttonName.split(" ");
+    if (e.keyCode === 39) {
+      if (buttonNameSplit[0] === "leftBtn") {
+        this.refs.sound.focus();
+      }
+      if (buttonNameSplit[0] === "sound") {
+        this.refs.rightBtn.focus();
+      }
+    } else if (e.keyCode === 37) {
+      if (buttonNameSplit[0] === "rightBtn") {
+        this.refs.sound.focus();
+      }
+      if (buttonNameSplit[0] === "sound") {
+        this.refs.leftBtn.focus();
+      }
+    }
+  };
   render() {
     return (
       <div className="Page27">
-        
-
         <div className="text">
           “Answering questions is my job!" Dr. Q said. “My job is to connect all
           of the dots to make sure you see the whole picture. If you decide to
@@ -19,13 +36,31 @@ class Page27 extends Component {
           like to do that! I want to help change the world!”
         </div>
         <img src={Image} alt="image" />
-        <Link to="/page26" style={{textDecoration: 'none'}}>
-          <Button className="leftBtn">Prev Page</Button>
+        <div className="alt_text">
+        Sofia and her brother both transitioning into research rangers. They can be seen with their research ranger outfits. Sofia has a pen and a clip board with a cape that has a RR symbol on it. Sofia’s brother can be see with a lasso and a cape with the RR symbol on it.
+        </div>
+        <Link to="/page26" style={{ textDecoration: "none" }}>
+          <Button
+            onKeyDown={this.handleKeyPress}
+            ref="leftBtn"
+            className="leftBtn"
+          >
+            Prev Page
+          </Button>
         </Link>
-        <Link to="/page28" style={{textDecoration: 'none'}}>
-          <Button className="rightBtn">Next Page</Button>
+        <Link to="/page28" style={{ textDecoration: "none" }}>
+          <Button
+            onKeyDown={this.handleKeyPress}
+            autoFocus
+            ref="rightBtn"
+            className="rightBtn"
+          >
+            Next Page
+          </Button>
         </Link>
-        <Button className ="sound">sound</Button>
+        <Button onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
       </div>
     );
   }

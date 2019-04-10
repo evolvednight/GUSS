@@ -10,24 +10,167 @@
   padding-top: 10%;
 }
 
+
 .leftBtn {
-  position:absolute;
+  position: fixed;
   transition: .5s ease;
   bottom: 0%;
- left: 0%;
+  left: 0%;
+
 }
 
 .rightBtn {
-  position:absolute;
+  position:fixed;
   transition: .5s ease;
   bottom: 0%;
   right: 0%;
 }
-.sound{
-    position:absolute;
-    transition: .5s ease;
-    right:50%;
-  bottom: 0%;
-  border-radius: 40%;
-  opacity: 0.3;
+
+.Image1{
+  position: absolute;
+  left: 48.7%;
+  top: 62.37%;
+  max-width: 1px;
+  max-height: 1px;
+  min-width: 1px;
+  min-height: 1px;
+  background-color: rgb(0, 0, 0, 0);
+  border-color: rgb(0, 0, 0, 0);
+  outline-color: rgb(0, 0, 0, 0);
 }
+
+.Image1:hover{
+  background-color: rgb(0, 0, 0, 0);
+  border-color: rgb(0, 0, 0, 0);
+}
+.Image2{
+  position: absolute;
+  left: 58.2%;
+  top: 70.9%;
+  max-width: 1px;
+  max-height: 1px;
+  min-width: 1px;
+  min-height: 1px;
+  background-color: rgb(0, 0, 0, 0);
+  border-color: rgb(0, 0, 0, 0);
+  outline-color: rgb(0, 0, 0, 0);
+}
+.Image2:hover{
+  background-color: rgb(0, 0, 0, 0);
+  border-color: rgb(0, 0, 0, 0);
+}
+.Image3{
+  position: absolute;
+  left: 28.4%;
+  top: 53.7%;
+  max-width: 1px;
+  max-height: 1px;
+  min-width: 1px;
+  min-height: 1px;
+  background-color: rgb(0, 0, 0, 0);
+  border-color: rgb(0, 0, 0, 0);
+  outline-color: rgb(0, 0, 0, 0);
+}
+.Image3:hover{
+  background-color: rgb(0, 0, 0, 0);
+  border-color: rgb(0, 0, 0, 0);
+}
+.Image4{
+  position: absolute;
+  left: 40%;
+  top: 72%;
+  max-width: 1px;
+  max-height: 1px;
+  min-width: 1px;
+  min-height: 1px;
+  background-color: rgb(0, 0, 0, 0);
+  border-color: rgb(0, 0, 0, 0);
+  outline-color: rgb(0, 0, 0, 0);
+}
+.Image4:hover{
+  background-color: rgb(0, 0, 0, 0);
+  border-color: rgb(0, 0, 0, 0);
+}
+.Image5{
+  position: absolute;
+  left: 24.9%;
+  top: 52%;
+  max-width: 1px;
+  max-height: 1px;
+  min-width: 1px;
+  min-height: 1px;
+  background-color: rgb(0, 0, 0, 0);
+  border-color: rgb(0, 0, 0, 0);
+  outline-color: rgb(0, 0, 0, 0);
+}
+.Image5:hover{
+  background-color: rgb(0, 0, 0, 0);
+  border-color: rgb(0, 0, 0, 0);
+}
+.Image6{
+  position: absolute;
+  left: 63.6%;
+  top: 62.87968%;
+  max-width: 1px;
+  max-height: 1px;
+  min-width: 1px;
+  min-height: 1px;
+  background-color: rgb(0, 0, 0, 0);
+  border-color: rgb(0, 0, 0, 0);
+  outline-color: rgb(0, 0, 0, 0);
+}
+.Image6:hover{
+  background-color: rgb(0, 0, 0, 0);
+  border-color: rgb(0, 0, 0, 0);
+}
+.Image7{
+  position: absolute;
+  left: 56%;
+  top: 60%;
+  max-width: 1px;
+  max-height: 1px;
+  min-width: 1px;
+  min-height: 1px;
+  background-color: rgb(0, 0, 0, 0);
+  border-color: rgb(0, 0, 0, 0);
+  outline-color: rgb(0, 0, 0, 0);
+}
+.Image7:hover{
+  background-color: rgb(0, 0, 0, 0);
+  border-color: rgb(0, 0, 0, 0);
+}
+.Image8{
+  position: absolute;
+  left: 25.4%;
+  top: 66.9%;
+  max-width: 1px;
+  max-height: 1px;
+  min-width: 1px;
+  min-height: 1px;
+  background-color: rgb(0, 0, 0, 0);
+  border-color: rgb(0, 0, 0, 0);
+  outline-color: rgb(0, 0, 0, 0);
+}
+.Image8:hover{
+  background-color: rgb(0, 0, 0, 0);
+  border-color: rgb(0, 0, 0, 0);
+}
+.Image9{
+  position: absolute;
+  left: 41.5%;
+  top: 79.2%;
+  max-width: 45px;
+  max-height: 45px;
+  min-width: 45px;
+  min-height: 45px;
+  background-color: rgb(0, 0, 0, 0);
+  border-color: rgb(0, 0, 0, 0);
+
+}
+.Image9:hover{
+  background-color: rgb(0, 0, 0, 0);
+  border-color: rgb(0, 0, 0, 0);
+}
+
+
+

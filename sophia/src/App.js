@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Home from "./components/Home";
+import Skip from "./components/Skip";
 import About from "./components/About";
 import Help from "./components/Help";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -59,6 +60,7 @@ class App extends Component {
                 >
                   <Switch location={location}>
                     <Route exact path="/" component={Home} />
+                    <Route path="/Skip_Pages" component={Skip} />
                     <Route path="/About" component={About} />
                     <Route path="/Help" component={Help} />
                     <Route path="/Page1" component={Page1} />
