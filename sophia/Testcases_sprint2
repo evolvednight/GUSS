@@ -5,12 +5,38 @@ Instructions:
 https://mighty-woodland-80177.herokuapp.com/?fbclid=IwAR0ZV22C5P2oi11gzm32VR-BSZ1P8RQm3JVNbTL0nWl3TyMdlUGeQ7Fdpwc
 
 
-Story 3:
+Story 3: As a user I should be able to see the outlines of the games
+
 Feature: Create buttons for each spot the difference
+1) Click Skip Pages button
+2) Click on Spot the difference game
+3) Should bring you to page 16
+4) Look at the image on page 16
+5) Click on the Next Page button
+6) Look at the image on page 17
+7) Hover over the image that is differnt than the one on page 16
+8) Mouse cursor should change indicating there is a button there
+9) Buttons do not have functions so clicking it will do nothing.
+
+Feature: Create game frames for crossword
+1) Click on Skip Pages button
+2) Click on Crossword button
+3) Should bring you to crossword page
+4) Look at page to see if frame is there
 
 
 
-Story 4:
+Story 4: The website should be accessible by everybody
+
+Feature: Make the website accessible to keyboards
+1) Navigate home page
+
+Feature: Make alt text for visuals
+1) Click on Start Story Button
+2) Read Alt-text under the image shown (*If there is no image, then there is no alt text. There are no alt text for games currently because of constant visual change)
+3) Alt text should describe the picture
+4) Click next button
+5) Repeat steps 2-4 until last page is hit
 
 Feature: Make the sound buttons functional
 1) Click Start Story Button
