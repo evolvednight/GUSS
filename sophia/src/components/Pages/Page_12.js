@@ -3,7 +3,52 @@ import { Button } from "react-bootstrap";
 import Image from "./Sofia_Images/Page_12_Bottom.JPG";
 import Image1 from "./Sofia_Images/Page_12_top.JPG";
 import { Link } from "react-router-dom";
+import press from './Sounds/press.mp3';
+import sounds from './Sounds/page12.m4a';
 class Page12 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      answer: "Wow",
+      play: false,
+      pause: true,
+    }
+    this.audio = new Audio(press);
+    this.audio2 = new Audio(sounds);
+  }
+  play = () => {
+    if(this.state.play ==false )
+    {
+    this.setState({ play: true, pause: false });
+    this.audio.play();
+    }
+    else
+    {
+    this.setState({ play: false, pause: true });
+    this.audio.pause();
+    this.audio.pause();
+    this.audio2.pause();
+    }
+  }
+    play2 = () => {
+      if(this.state.play ==false )
+      {
+      this.setState({ play: true, pause: false });
+      this.audio2.play();
+      }
+      else
+      {
+      this.setState({ play: false, pause: true });
+      this.audio.pause();
+      this.audio.pause();
+      this.audio2.pause();
+      }
+    }
+      pause = () => {
+        this.setState({ play: false, pause: true })
+          this.audio2.pause();
+          this.audio.pause();
+        }
   handleKeyPress = e => {
     let buttonName = e.target.className;
     let buttonNameSplit = buttonName.split(" ");
@@ -35,6 +80,7 @@ class Page12 extends Component {
         <Link to="/page11" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
+            onClick={this.play}
             ref="leftBtn"
             className="leftBtn"
           >
@@ -44,6 +90,7 @@ class Page12 extends Component {
         <Link to="/page13" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
+            onClick={this.play}
             autoFocus
             ref="rightBtn"
             className="rightBtn"
@@ -51,7 +98,7 @@ class Page12 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button ref="sound" onKeyDown={this.handleKeyPress} className="sound">
+        <Button onClick={this.play2} ref="sound" onKeyDown={this.handleKeyPress} className="sound">
           sound
         </Button>
       </div>
