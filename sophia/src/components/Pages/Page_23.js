@@ -3,11 +3,28 @@ import { Button } from "react-bootstrap";
 import Image from "./Sofia_Images/Page_23.JPG";
 import { Link } from "react-router-dom";
 class Page23 extends Component {
+  handleKeyPress = e => {
+    let buttonName = e.target.className;
+    let buttonNameSplit = buttonName.split(" ");
+    if (e.keyCode === 39) {
+      if (buttonNameSplit[0] === "leftBtn") {
+        this.refs.sound.focus();
+      }
+      if (buttonNameSplit[0] === "sound") {
+        this.refs.rightBtn.focus();
+      }
+    } else if (e.keyCode === 37) {
+      if (buttonNameSplit[0] === "rightBtn") {
+        this.refs.sound.focus();
+      }
+      if (buttonNameSplit[0] === "sound") {
+        this.refs.leftBtn.focus();
+      }
+    }
+  };
   render() {
     return (
       <div className="Page23">
-      
-
         <div className="text">
           Sofia was pretty sure she understood. She said, “Okay, we have to tell
           you that it's okay for us to be in the study and you'll tell us if
@@ -22,13 +39,28 @@ class Page23 extends Component {
           help us with that too."
         </div>
         <img src={Image} alt="image" />
-        <Link to="/page22" style={{textDecoration: 'none'}}>
-          <Button className="leftBtn">Prev Page</Button>
+        <Link to="/page22" style={{ textDecoration: "none" }}>
+          <Button
+            onKeyDown={this.handleKeyPress}
+            ref="leftBtn"
+            className="leftBtn"
+          >
+            Prev Page
+          </Button>
         </Link>
-        <Link to="/page24" style={{textDecoration: 'none'}}> 
-          <Button className="rightBtn">Next Page</Button>
+        <Link to="/page24" style={{ textDecoration: "none" }}>
+          <Button
+            onKeyDown={this.handleKeyPress}
+            autoFocus
+            ref="rightBtn"
+            className="rightBtn"
+          >
+            Next Page
+          </Button>
         </Link>
-        <Button className ="sound">sound</Button>
+        <Button onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
       </div>
     );
   }
