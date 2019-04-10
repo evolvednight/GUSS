@@ -14,7 +14,7 @@ class Crossword extends Component {
           <td className="cell cell1" style={tdStyles}>P</td>
           <td className="cell cell2" style={tdStyles}>W</td>
           <td className="cell cell3" style={tdStyles}>Y</td>
-          <td className="cell cell4" style={tdStyles}>S</td>
+          <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
           <td className="cell cell5" style={tdStyles}>C</td>
           <td className="cell cell6" style={tdStyles}>I</td>
           <td className="cell cell7" style={tdStyles}>E</td>
@@ -31,7 +31,7 @@ class Crossword extends Component {
           <td className="cell cell1" style={tdStyles}>J</td>
           <td className="cell cell2" style={tdStyles}>K</td>
           <td className="cell cell3" style={tdStyles}>N</td>
-          <td className="cell cell4" style={tdStyles}>O</td>
+          <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
           <td className="cell cell5" style={tdStyles}>W</td>
           <td className="cell cell6" style={tdStyles}>L</td>
           <td className="cell cell7" style={tdStyles}>E</td>
@@ -48,7 +48,7 @@ class Crossword extends Component {
           <td className="cell cell1" style={tdStyles}>N</td>
           <td className="cell cell2" style={tdStyles}>L</td>
           <td className="cell cell3" style={tdStyles}>K</td>
-          <td className="cell cell4" style={tdStyles}>H</td>
+          <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
           <td className="cell cell5" style={tdStyles}>E</td>
           <td className="cell cell6" style={tdStyles}>L</td>
           <td className="cell cell7" style={tdStyles}>P</td>
@@ -65,7 +65,7 @@ class Crossword extends Component {
           <td className="cell cell1" style={tdStyles}>V</td>
           <td className="cell cell2" style={tdStyles}>Q</td>
           <td className="cell cell3" style={tdStyles}>U</td>
-          <td className="cell cell4" style={tdStyles}>E</td>
+          <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
           <td className="cell cell5" style={tdStyles}>S</td>
           <td className="cell cell6" style={tdStyles}>T</td>
           <td className="cell cell7" style={tdStyles}>I</td>
@@ -82,7 +82,7 @@ class Crossword extends Component {
           <td className="cell cell1" style={tdStyles}>S</td>
           <td className="cell cell2" style={tdStyles}>T</td>
           <td className="cell cell3" style={tdStyles}>U</td>
-          <td className="cell cell4" style={tdStyles}>D</td>
+          <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
           <td className="cell cell5" style={tdStyles}>Y</td>
           <td className="cell cell6" style={tdStyles}>A</td>
           <td className="cell cell7" style={tdStyles}>G</td>
@@ -136,12 +136,12 @@ class Crossword extends Component {
           <td className="cell cell4" style={tdStyles}></td>
           <td className="cell cell5" style={tdStyles}></td>
           <td className="cell cell6" style={tdStyles}></td>
-          <td className="cell cell7" style={tdStyles}></td>
-          <td className="cell cell8" style={tdStyles}></td>
-          <td className="cell cell9" style={tdStyles}></td>
-          <td className="cell cell10" style={tdStyles}></td>
-          <td className="cell cell11" style={tdStyles}></td>
-          <td className="cell cell12" style={tdStyles}></td>
+          <td className="cell cell7"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
+          <td className="cell cell8"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
+          <td className="cell cell9"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
+          <td className="cell cell10"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
+          <td className="cell cell11"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
+          <td className="cell cell12"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
           <td className="cell cell13" style={tdStyles}></td>
           <td className="cell cell14" style={tdStyles}></td>
             </tr>

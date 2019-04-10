@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Crossword from "../Games/Crossword";
 class Page20 extends Component {
   render() {
     return (
@@ -11,7 +12,7 @@ class Page20 extends Component {
           Lots and Lots of Research Words Complete the crossword below
         </div>
 
-        <div className="text">Game</div>
+        <Crossword />
         <Link to="/page19" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

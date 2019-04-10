@@ -1,5 +1,5 @@
 var tdStyles = {
-	backgroundColor: 'white',
+	backgroundColor: 'black',
 };
 
 export default tdStyles;
