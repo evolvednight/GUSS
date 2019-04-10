@@ -24,6 +24,10 @@ class Page9 extends Component {
           data.”
         </div>
         <img src={Image} alt="image" />
+
+        <div className="alt_text">
+        Dr.Q, Sofia and her dad and brother looking up into a vortex of numbers and research words, graphs, tools, etc.
+        </div>
         <Link to="/page8" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

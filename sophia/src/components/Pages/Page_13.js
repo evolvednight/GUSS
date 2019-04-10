@@ -17,6 +17,11 @@ class Page13 extends Component {
           how much you weigh?____ pounds What size shoe are you?
         </div>
         <img src={Image} alt="image" />
+
+        <div className="alt_text">
+        A male scientist measuring a boy with a soccer t-shirt weight using a old-fashion scale.
+A happy smiling flower and height measurer is in the background.
+        </div>
         <Link to="/page12" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

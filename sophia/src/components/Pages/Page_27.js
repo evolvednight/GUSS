@@ -19,6 +19,10 @@ class Page27 extends Component {
           like to do that! I want to help change the world!”
         </div>
         <img src={Image} alt="image" />
+
+        <div className="alt_text">
+        Sofia and her brother both transitioning into research rangers. They can be seen with their research ranger outfits. Sofia has a pen and a clip board with a cape that has a RR symbol on it. Sofia’s brother can be see with a lasso and a cape with the RR symbol on it.
+        </div>
         <Link to="/page26" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

@@ -22,6 +22,10 @@ class Page6 extends Component {
           “So what IS a research study?" was the first thing Sofia blurted out.
         </div>
         <img src={Image} alt="image" />
+
+        <div className="alt_text">
+        Dr. Q and Sofia’s dad looking at Sofia. Sofia saying aloud “What is a study” as she shrugs her shoulder.
+        </div>
         <Link to="/page5" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

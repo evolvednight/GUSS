@@ -19,6 +19,10 @@ class Page3 extends Component {
           pig!
         </div>
         <img src={Image} alt="image" />
+
+        <div className="alt_text">
+        Dr. Amanda Quinby walks in smiling into the room. Sofia’s dad and brother sitting on the chair  look at Dr. Amanda with a smile. Sofia frowns at the sight of Dr. Amanda. Dr. Wilson stood in the room still talking to Sofia.
+        </div>
         <Link to="/page2" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

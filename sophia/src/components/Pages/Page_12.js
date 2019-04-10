@@ -14,6 +14,10 @@ class Page12 extends Component {
         </div>
         <img src={Image1} alt="image" />
         <img src={Image} alt="image" />
+
+        <div className="alt_text">
+        A hand with gloves draws blood using a syringe from a hand that has a tight knot on the upper part of the hand. Three test tubes with blood in them are spun around. The test tubes show that there are three divided sections, Plasma, White, and Red. A petri dish is seen with three smaples in it. Some red blood cell is seen. A microscope looking into a sample of blood.
+        </div>
         <Link to="/page11" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

@@ -23,6 +23,10 @@ class Page19 extends Component {
           study is called.”
         </div>
         <img src={Image} alt="image" />
+
+        <div className="alt_text">
+        Sofia with her arms against the table thinks about Dr.Q meeting Sofia’s mom and dad and herself.
+        </div>
         <Link to="/page18" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

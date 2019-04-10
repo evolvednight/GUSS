@@ -18,6 +18,10 @@ class Page4 extends Component {
           meet you, too. We would like to hear more about it. Thank you."
         </div>
         <img src={Image} alt="image" />
+
+        <div className="alt_text">
+        Sofia thinks about a rat in a maze. Dr. Q is talking to Sofia. Sofia’s brother tries to climb onto the desk that has a tablet on top.
+        </div>
         <Link to="/page3" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

@@ -24,6 +24,10 @@ class Page14 extends Component {
           try an old one. This is to see if the new one works better.”
         </div>
         <img src={Image} alt="image" />
+
+        <div className="alt_text">
+        Six test tubes in a cylindrical container.
+        </div>
         <Link to="/page13" style={{textDecoration: 'none'}} >
           <Button className="leftBtn">Prev Page</Button>
         </Link>

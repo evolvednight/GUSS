@@ -17,6 +17,9 @@ class Page16 extends Component {
           week after remembering her bug spray and sun protection.
         </div>
         <img src={Image} alt="image" />
+
+
+
         <Link to="/page15" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

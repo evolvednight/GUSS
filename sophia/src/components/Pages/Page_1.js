@@ -22,14 +22,21 @@ class Page1 extends Component {
 
         <img src={Image} alt="image" />
 
+      <div className= "ButtonContainer">
+      <Button >sound</Button>
+      </div>
 
-        <Link to="/" style={{textDecoration: 'none'}} >
+      <div className="alt_text">
+      Sofia thinking “Why can’t asthma be easier” on a  desk in the doctor’s office. Sofia’s dad is looking at his phone and Sofia’s brother is playing around.
+        </div>
+      
+      <Link to="/" style={{textDecoration: 'none'}} >
           <Button className="leftBtn">Prev Page</Button>
         </Link>
         <Link to="/page2" style={{textDecoration: 'none'}}>
           <Button className="rightBtn">Next Page</Button>
         </Link>
-        <Button>sound</Button>
+      
       </div>
     );
   }

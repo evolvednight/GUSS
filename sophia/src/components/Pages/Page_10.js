@@ -14,6 +14,10 @@ class Page10 extends Component {
           is interested in learning more about.
         </div>
         <img src={Image} alt="image" />
+
+        <div className="alt_text">
+        A group of 4 girls and 3 boys sitting in a circle while a female teacher points at a diagram of human lungs. Another female sits on a chair taking notes with a clipboard observing the children learn from the teacher.
+        </div>
         <Link to="/page9" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>

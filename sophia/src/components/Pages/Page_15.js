@@ -16,6 +16,10 @@ class Page15 extends Component {
           anymore. It's great!'
         </div>
         <img src={Image} alt="image" />
+
+        <div className="alt_text">
+        Sofia thinking about tying a shoelace into a bow. She is also thinking about a bunny head.
+        </div>
         <Link to="/page14" style={{textDecoration: 'none'}}>  
           <Button className="leftBtn">Prev Page</Button>
         </Link>
