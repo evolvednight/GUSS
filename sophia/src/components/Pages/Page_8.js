@@ -1,9 +1,57 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 import WordSearch from "../Games/WordSearch";
 
+=======
+import press from './Sounds/press.mp3';
+import sounds from './Sounds/page8.m4a';
+>>>>>>> Sound_mergeFix
 class Page8 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      answer: "Wow",
+      play: false,
+      pause: true,
+    }
+    this.audio = new Audio(press);
+    this.audio2 = new Audio(sounds);
+  }
+  play = () => {
+    if(this.state.play ==false )
+    {
+    this.setState({ play: true, pause: false });
+    this.audio.play();
+    }
+    else
+    {
+    this.setState({ play: false, pause: true });
+    this.audio.pause();
+    this.audio.pause();
+    this.audio2.pause();
+    }
+  }
+    play2 = () => {
+      if(this.state.play ==false )
+      {
+      this.setState({ play: true, pause: false });
+      this.audio2.play();
+      }
+      else
+      {
+      this.setState({ play: false, pause: true });
+      this.audio.pause();
+      this.audio.pause();
+      this.audio2.pause();
+      }
+    }
+      pause = () => {
+        this.setState({ play: false, pause: true })
+          this.audio2.pause();
+          this.audio.pause();
+        }
   handleKeyPress = e => {
     let buttonName = e.target.className;
     let buttonNameSplit = buttonName.split(" ");
@@ -29,31 +77,41 @@ class Page8 extends Component {
         <div className="text">
           Can you help Sofia find all the words she just learned about?
         </div>
+<<<<<<< HEAD
         <WordSearch />
         <div className="text" />
+=======
+
+        <div className="text">Game</div>
+>>>>>>> Sound_mergeFix
         <Link to="/page7" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
+            onClick={this.play}
             ref="leftBtn"
             className="leftBtn"
           >
             Prev Page
           </Button>
+<<<<<<< HEAD
         </Link>
         <Link to="/page7" style={{ textDecoration: "none" }}>
           <Button className="leftBtn">Prev Page</Button>
+=======
+>>>>>>> Sound_mergeFix
         </Link>
         <Link to="/page9" style={{ textDecoration: "none" }}>
           <Button
             autoFocus
             ref="rightBtn"
             onKeyDown={this.handleKeyPress}
+            onClick={this.play}
             className="rightBtn"
           >
             Next Page
           </Button>
         </Link>
-        <Button onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
           sound
         </Button>
       </div>
