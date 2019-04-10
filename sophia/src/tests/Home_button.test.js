@@ -43,3 +43,9 @@ test("clicking help button takes to help page", async () => {
   const url = await page.url();
   assert(url === "https://mighty-woodland-80177.herokuapp.com/Help");
 });
+
+test("pressing enter will change page to next page", async () => {
+  await page.keyboard.press('Enter');
+  const url = await page.url();
+  assert(url === "https://mighty-woodland-80177.herokuapp.com/Page1");
+});
