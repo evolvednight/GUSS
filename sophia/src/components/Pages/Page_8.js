@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import WordSearch from "../Games/WordSearch";
+
 class Page8 extends Component {
   handleKeyPress = e => {
     let buttonName = e.target.className;
@@ -27,8 +29,8 @@ class Page8 extends Component {
         <div className="text">
           Can you help Sofia find all the words she just learned about?
         </div>
-
-        <div className="text">Game</div>
+        <WordSearch />
+        <div className="text" />
         <Link to="/page7" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
