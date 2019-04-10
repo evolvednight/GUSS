@@ -1,0 +1,30 @@
+Test Cases
+
+Instructions: 
+1) Open link to begin testing
+https://mighty-woodland-80177.herokuapp.com/?fbclid=IwAR0ZV22C5P2oi11gzm32VR-BSZ1P8RQm3JVNbTL0nWl3TyMdlUGeQ7Fdpwc
+
+
+Story 3:
+Feature: Create buttons for each spot the difference
+
+
+
+Story 4:
+
+Feature: Make the sound buttons functional
+1) Click Start Story Button
+2) Click Sound Button
+3) You should hear a sound when clicked
+4) Click Next Page
+5) Repeat step 2-4 until you get to the last page.
+
+Feature: Fix the Skip Pages Button
+1) Click Skip Pages button
+2) Click on maze
+3) Should bring you to page 5
+4) Click on Sophia's Storybook header to go back to homepage
+5) Click Skip Pages button
+6) Click on another game
+7) Should bring you to the game page
+8) Repeat steps 5-7 until all games had been pressed.
