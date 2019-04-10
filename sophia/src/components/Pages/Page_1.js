@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import "./Page.css";
 
+
 class Page1 extends Component {
   handleKeyPress = e => {
     let buttonName = e.target.className;
