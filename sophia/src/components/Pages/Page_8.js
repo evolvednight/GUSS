@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-
-=======
 import WordSearch from "../Games/WordSearch";
->>>>>>> d9cf05b0820b4d80b7d5ddd3e83c9ba1d7e8273f
 
 class Page8 extends Component {
   handleKeyPress = e => {
@@ -33,14 +29,8 @@ class Page8 extends Component {
         <div className="text">
           Can you help Sofia find all the words she just learned about?
         </div>
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-        <div className="text">Game</div>
-=======
         <WordSearch />
         <div className="text" />
->>>>>>> d9cf05b0820b4d80b7d5ddd3e83c9ba1d7e8273f
         <Link to="/page7" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
@@ -49,10 +39,9 @@ class Page8 extends Component {
           >
             Prev Page
           </Button>
-=======
-        <Link to="/page7" style={{textDecoration: 'none'}}>
+        </Link>
+        <Link to="/page7" style={{ textDecoration: "none" }}>
           <Button className="leftBtn">Prev Page</Button>
->>>>>>> game
         </Link>
         <Link to="/page9" style={{ textDecoration: "none" }}>
           <Button
@@ -68,7 +57,6 @@ class Page8 extends Component {
           sound
         </Button>
       </div>
-      
     );
   }
 }
