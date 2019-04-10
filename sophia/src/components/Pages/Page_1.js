@@ -22,9 +22,7 @@ class Page1 extends Component {
 
         <img src={Image} alt="image" />
 
-      <div className= "ButtonContainer">
-      <Button >sound</Button>
-      </div>
+
 
       <div className="alt_text">
       Sofia thinking “Why can’t asthma be easier” on a  desk in the doctor’s office. Sofia’s dad is looking at his phone and Sofia’s brother is playing around.

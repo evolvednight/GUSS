@@ -28,7 +28,7 @@ A happy smiling flower and height measurer is in the background.
         <Link to="/page14" style={{textDecoration: 'none'}}>
           <Button className="rightBtn">Next Page</Button>
         </Link>
-        <Button>sound</Button>
+
       </div>
     );
   }
