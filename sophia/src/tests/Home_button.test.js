@@ -49,3 +49,12 @@ test("pressing enter will change page to next page", async () => {
   const url = await page.url();
   assert(url === "https://mighty-woodland-80177.herokuapp.com/Page1");
 });
+
+test("pressing sound will not change page", async () => {
+  await page.click(".btn_1");
+  const url = await page.url();
+  assert(url === "https://mighty-woodland-80177.herokuapp.com/Page1");
+  await page.click(".sound");
+  const url = await page.url();
+  assert(url === "https://mighty-woodland-80177.herokuapp.com/Page1");
+});
