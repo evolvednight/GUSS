@@ -39,6 +39,9 @@ class Page25 extends Component {
           home today and you can tell her all about it."
         </div>
         <img src={Image} alt="image" />
+        <div className="alt_text">
+        Sofia and her brother and Dr.Q all sit on a bench reading a book about called the Research Rangers. On the cover of the book is a girl with glasses holding a clipboard and a boy holding a magnifying glass.
+        </div>
         <Link to="/page24" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}

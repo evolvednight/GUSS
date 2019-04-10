@@ -32,7 +32,9 @@ class Home extends Component {
 
   render() {
     return (
+      
       <div className="home">
+      
         <div className="home-card">
           <Link to="/Page1" style={{ textDecoration: "none" }}>
             <Button
@@ -75,8 +77,12 @@ class Home extends Component {
               HELP
             </Button>
           </Link>
+
+
         </div>
+        
       </div>
+      
     );
   }
 }

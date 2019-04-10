@@ -67,3 +67,8 @@
 .btn_4 {
   background-color: rgb(121, 138, 190);
 }
+
+.alt_text1{
+  position: relative;
+  bottom: 0%;
+}

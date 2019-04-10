@@ -40,6 +40,9 @@ class Page7 extends Component {
           this, and she wasn't sure she could remember…
         </div>
         <img src={Image} alt="image" />
+        <div className="alt_text">
+        Four bacterias. One circular one with other smaller circles in it. One long one with spiky ball frills coming out of it. One small long one with small spikes coming out of it. One spiky ball one with medium circles in it.
+        </div>
         <Link to="/page6" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}

@@ -37,6 +37,9 @@ class Page24 extends Component {
           about how to tell my friends about this when they ask about it.”
         </div>
         <img src={Image} alt="image" />
+        <div className="alt_text">
+        Sofia thinks about a syringe and telling her three friends something. Sofia is also frowning while thinking about things.
+        </div>
         <Link to="/page23" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
