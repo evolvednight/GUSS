@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Crossword from "../Games/Crossword";
+
+
 class Page8 extends Component {
   render() {
     return (
@@ -11,7 +14,7 @@ class Page8 extends Component {
           Can you help Sofia find all the words she just learned about?
         </div>
 
-        <div className="text">Game</div>
+        <Crossword />
         <Link to="/page7" style={{textDecoration: 'none'}}>
           <Button className="leftBtn">Prev Page</Button>
         </Link>
@@ -20,6 +23,7 @@ class Page8 extends Component {
         </Link>
         <Button>sound</Button>
       </div>
+      
     );
   }
 }
