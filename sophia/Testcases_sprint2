@@ -24,12 +24,26 @@ Feature: Create game frames for crossword
 3) Should bring you to crossword page
 4) Look at page to see if frame is there
 
+Feature: Create the grid and get all the letters in
+1) Click on Skip Pages button
+2) Click on Crossword button
+3) Should bring you to crossword page
+4) Look at page to see if grid for crosswords is there.
 
 
 Story 4: The website should be accessible by everybody
 
+Feature: Push project onto live domain
+1) Click on Link below or copy and paste it in url.
+https://mighty-woodland-80177.herokuapp.com/?fbclid=IwAR0ZV22C5P2oi11gzm32VR-BSZ1P8RQm3JVNbTL0nWl3TyMdlUGeQ7Fdpwc
+2) Should bring you to Sophia's Storybook web app
+
 Feature: Make the website accessible to keyboards
-1) Navigate home page
+1) Navigate home page by clicking on down arrow key to move through butttons
+2) Click "Enter" button on keyboard to select.
+3) Click "Enter" on your keyboard on highlighted button "Start Story" to move to page 1.
+4) Click left arrow key on keyboard and then enter button on keyboard to move to prev page, homepage
+5) Click on right arrow key on keyboard and then enter button on keyboard to move to next page, page2
 
 Feature: Make alt text for visuals
 1) Click on Start Story Button
