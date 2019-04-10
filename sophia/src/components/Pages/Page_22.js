@@ -123,7 +123,7 @@ class Page22 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onClick={this.play} ref="sound" className="sound">
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
           sound
         </Button>
       </div>
