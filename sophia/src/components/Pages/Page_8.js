@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+
+
 class Page8 extends Component {
   handleKeyPress = e => {
     let buttonName = e.target.className;
@@ -28,6 +30,7 @@ class Page8 extends Component {
           Can you help Sofia find all the words she just learned about?
         </div>
 
+<<<<<<< HEAD
         <div className="text">Game</div>
         <Link to="/page7" style={{ textDecoration: "none" }}>
           <Button
@@ -37,6 +40,10 @@ class Page8 extends Component {
           >
             Prev Page
           </Button>
+=======
+        <Link to="/page7" style={{textDecoration: 'none'}}>
+          <Button className="leftBtn">Prev Page</Button>
+>>>>>>> game
         </Link>
         <Link to="/page9" style={{ textDecoration: "none" }}>
           <Button
@@ -52,6 +59,7 @@ class Page8 extends Component {
           sound
         </Button>
       </div>
+      
     );
   }
 }
