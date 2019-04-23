@@ -1,0 +1,21 @@
+{
+  "name": "guss",
+  "version": "1.0.0",
+  "description": "Interactive and educational storybook for kids. The final project will be a webapp with activites that allow users to play games to progress through the story line. The development stack consists of React.JS for the front-end and Node.JS for the backend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd sophia && npm start",
+    "heroku-postbuild": "cd sophia && npm install && npm run-script build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syu25/GUSS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syu25/GUSS/issues"
+  },
+  "homepage": "https://github.com/syu25/GUSS#readme"
+}

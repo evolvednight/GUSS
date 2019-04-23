@@ -72,8 +72,8 @@ class Page8 extends Component {
         <div className="text">
           Can you help Sofia find all the words she just learned about?
         </div>
-
-        <div className="text">Game</div>
+        <WordSearch />
+        <div className="text" />
         <Link to="/page7" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
