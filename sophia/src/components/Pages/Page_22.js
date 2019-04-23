@@ -68,11 +68,7 @@ class Page22 extends Component {
     }
   };
 
-  handleInputChange = e => {
-    this.setState({
-      [e.target.name]: e.target.value
-    });
-  };
+  
 
   render() {
     return (
@@ -81,25 +77,7 @@ class Page22 extends Component {
           Crack the Code! Help Sofia figure out the hidden message!
         </div>
 
-        <Form style={{ margin: "10px" }} text="white">
-          <Form.Group as={Row} controlId="formHorizontalEmail">
-            <Form.Label column sm="5">
-              <font color="white">Answer: </font>
-            </Form.Label>
-            <Col sm="7">
-              <Form.Control
-                type=""
-                placeholder="0"
-                name="answer"
-                onChange={this.handleInputChange}
-              />
-            </Col>
-          </Form.Group>
-          <Button
-          onClick = {this.check}
-          >
-          </Button>
-        </Form>
+       
 
         <div className="text">Game</div>
         <Link to="/page21" style={{ textDecoration: "none" }}>
