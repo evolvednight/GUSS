@@ -4,95 +4,104 @@ import Table from 'react-bootstrap/Table';
 import tdStyles from './tdStyles';
 import './Crossword.css';
 
+//var letters = /^[A-Za-z]+$/;
 class Crossword extends Component {
 
     render() {
         return (
-            <table className="puzzle" class="center">
+          <div className="crossword">
+            <Table className="puzzle">
             <tr className="row0">
-          <td className="cell cell0" style={tdStyles}>I</td>
-          <td className="cell cell1" style={tdStyles}>P</td>
-          <td className="cell cell2" style={tdStyles}>W</td>
-          <td className="cell cell3" style={tdStyles}>Y</td>
-          <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
-          <td className="cell cell5" style={tdStyles}>C</td>
-          <td className="cell cell6" style={tdStyles}>I</td>
-          <td className="cell cell7" style={tdStyles}>E</td>
-          <td className="cell cell8" style={tdStyles}>N</td>
-          <td className="cell cell9" style={tdStyles}>T</td>
-          <td className="cell cell10" style={tdStyles}>I</td>
-          <td className="cell cell11" style={tdStyles}>S</td>
-          <td className="cell cell12" style={tdStyles}>T</td>
-          <td className="cell cell13" style={tdStyles}>W</td>
-          <td className="cell cell14" style={tdStyles}>F</td>
+              <td className="cell cell0" style={tdStyles}></td>
+              <td className="cell cell1" style={tdStyles}></td>
+              <td className="cell cell2" style={tdStyles}></td>
+              <td className="cell cell3" style={tdStyles}></td>
+              <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
+              <td className="cell cell5" style={tdStyles}></td>
+              <td className="cell cell6" style={tdStyles}></td>
+              <td className="cell cell7" style={tdStyles}></td>
+              <td className="cell cell8" style={tdStyles}></td>
+              <td className="cell cell9" style={tdStyles}></td>
+              <td className="cell cell10" style={tdStyles}></td>
+              <td className="cell cell11" style={tdStyles}></td>
+              <td className="cell cell12" style={tdStyles}></td>
+              <td className="cell cell13" style={tdStyles}></td>
+              <td className="cell cell14" style={tdStyles}></td>
             </tr>
             <tr className="row1">
-          <td className="cell cell0" style={tdStyles}>H</td>
-          <td className="cell cell1" style={tdStyles}>J</td>
-          <td className="cell cell2" style={tdStyles}>K</td>
-          <td className="cell cell3" style={tdStyles}>N</td>
-          <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
-          <td className="cell cell5" style={tdStyles}>W</td>
-          <td className="cell cell6" style={tdStyles}>L</td>
-          <td className="cell cell7" style={tdStyles}>E</td>
-          <td className="cell cell8" style={tdStyles}>D</td>
-          <td className="cell cell9" style={tdStyles}>G</td>
-          <td className="cell cell10" style={tdStyles}>E</td>
-          <td className="cell cell11" style={tdStyles}>W</td>
-          <td className="cell cell12" style={tdStyles}>U</td>
-          <td className="cell cell13" style={tdStyles}>N</td>
-          <td className="cell cell14" style={tdStyles}>E</td>
+              <td className="cell cell0" style={tdStyles}></td>
+              <td className="cell cell1" style={tdStyles}></td>
+              <td className="cell cell2" style={tdStyles}></td>
+              <td className="cell cell3" style={tdStyles}></td>
+              <td className="cell cell4">
+              <input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange}
+              //function({
+                //      if(!ref.value.match(letters))
+                  //    {
+                    //    alert('this is not a letter, please input alphabet only');
+                   //   }}})
+                    /></td>
+              <td className="cell cell5" style={tdStyles}></td>
+              <td className="cell cell6" style={tdStyles}></td>
+              <td className="cell cell7" style={tdStyles}></td>
+              <td className="cell cell8" style={tdStyles}></td>
+              <td className="cell cell9" style={tdStyles}></td>
+              <td className="cell cell10" style={tdStyles}></td>
+              <td className="cell cell11" style={tdStyles}></td>
+              <td className="cell cell12" style={tdStyles}></td>
+              <td className="cell cell13" style={tdStyles}></td>
+              <td className="cell cell14" style={tdStyles}></td>
             </tr>
             <tr className="row2">
-          <td className="cell cell0" style={tdStyles}>Y</td>
-          <td className="cell cell1" style={tdStyles}>N</td>
-          <td className="cell cell2" style={tdStyles}>L</td>
-          <td className="cell cell3" style={tdStyles}>K</td>
-          <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
-          <td className="cell cell5" style={tdStyles}>E</td>
-          <td className="cell cell6" style={tdStyles}>L</td>
-          <td className="cell cell7" style={tdStyles}>P</td>
-          <td className="cell cell8" style={tdStyles}>O</td>
-          <td className="cell cell9" style={tdStyles}>R</td>
-          <td className="cell cell10" style={tdStyles}>I</td>
-          <td className="cell cell11" style={tdStyles}>N</td>
-          <td className="cell cell12" style={tdStyles}>A</td>
-          <td className="cell cell13" style={tdStyles}>R</td>
-          <td className="cell cell14" style={tdStyles}>X</td>
+              <td className="cell cell0" style={tdStyles}></td>
+              <td className="cell cell1" style={tdStyles}></td>
+              <td className="cell cell2" style={tdStyles}></td>
+              <td className="cell cell3" style={tdStyles}></td>
+              <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
+              <td className="cell cell5" style={tdStyles}></td>
+              <td className="cell cell6" style={tdStyles}></td>
+              <td className="cell cell7" style={tdStyles}></td>
+              <td className="cell cell8" style={tdStyles}></td>
+              <td className="cell cell9" style={tdStyles}></td>
+              <td className="cell cell10" style={tdStyles}></td>
+              <td className="cell cell11" style={tdStyles}></td>
+              <td className="cell cell12" style={tdStyles}></td>
+              <td className="cell cell13" style={tdStyles}></td>
+              <td className="cell cell14" style={tdStyles}></td>
             </tr>
             <tr className="row3">
-          <td className="cell cell0" style={tdStyles}>P</td>
-          <td className="cell cell1" style={tdStyles}>V</td>
-          <td className="cell cell2" style={tdStyles}>Q</td>
-          <td className="cell cell3" style={tdStyles}>U</td>
+          <td className="cell cell0" style={tdStyles}></td>
+          <td className="cell cell1" style={tdStyles}></td>
+          <td className="cell cell2" style={tdStyles}></td>
+          <td className="cell cell3" style={tdStyles}></td>
           <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
-          <td className="cell cell5" style={tdStyles}>S</td>
-          <td className="cell cell6" style={tdStyles}>T</td>
-          <td className="cell cell7" style={tdStyles}>I</td>
-          <td className="cell cell8" style={tdStyles}>O</td>
-          <td className="cell cell9" style={tdStyles}>N</td>
-          <td className="cell cell10" style={tdStyles}>T</td>
-          <td className="cell cell11" style={tdStyles}>A</td>
-          <td className="cell cell12" style={tdStyles}>Y</td>
-          <td className="cell cell13" style={tdStyles}>N</td>
-          <td className="cell cell14" style={tdStyles}>P</td>
+          <td className="cell cell5" style={tdStyles}></td>
+          <td className="cell cell6" style={tdStyles}></td>
+          <td className="cell cell7" style={tdStyles}></td>
+          <td className="cell cell8" style={tdStyles}></td>
+          <td className="cell cell9" style={tdStyles}></td>
+          <td className="cell cell10" style={tdStyles}></td>
+          <td className="cell cell11" style={tdStyles}></td>
+          <td className="cell cell12" style={tdStyles}></td>
+          <td className="cell cell13" style={tdStyles}></td>
+          <td className="cell cell14" style={tdStyles}></td>
             </tr>
             <tr className="row4">
-            <td className="cell cell0" style={tdStyles}>O</td>
-          <td className="cell cell1" style={tdStyles}>S</td>
-          <td className="cell cell2" style={tdStyles}>T</td>
-          <td className="cell cell3" style={tdStyles}>U</td>
+          <td className="cell cell0" style={tdStyles}></td>
+          <td className="cell cell1" style={tdStyles}></td>
+          <td className="cell cell2" style={tdStyles}></td>
+          <td className="cell cell3" style={tdStyles}></td>
           <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
-          <td className="cell cell5" style={tdStyles}>Y</td>
-          <td className="cell cell6" style={tdStyles}>A</td>
-          <td className="cell cell7" style={tdStyles}>G</td>
-          <td className="cell cell8" style={tdStyles}>F</td>
-          <td className="cell cell9" style={tdStyles}>C</td>
-          <td className="cell cell10" style={tdStyles}>F</td>
-          <td className="cell cell11" style={tdStyles}>H</td>
-          <td className="cell cell12" style={tdStyles}>Y</td>
-          <td className="cell cell13" style={tdStyles}>G</td>
-          <td className="cell cell14" style={tdStyles}>E</td>
+          <td className="cell cell5" style={tdStyles}></td>
+          <td className="cell cell6" style={tdStyles}></td>
+          <td className="cell cell7" style={tdStyles}></td>
+          <td className="cell cell8" style={tdStyles}></td>
+          <td className="cell cell9" style={tdStyles}></td>
+          <td className="cell cell10" style={tdStyles}></td>
+          <td className="cell cell11" style={tdStyles}></td>
+          <td className="cell cell12" style={tdStyles}></td>
+          <td className="cell cell13" style={tdStyles}></td>
+          <td className="cell cell14" style={tdStyles}></td>
             </tr>
             <tr className="row5">
           <td className="cell cell0" style={tdStyles}></td>
@@ -283,7 +292,10 @@ class Crossword extends Component {
           <td className="cell cell14" style={tdStyles}></td>
             </tr>
           
-          </table>
+          </Table>
+          <div className="text">
+          </div>
+          </div>
         )
     }
 
