@@ -85,6 +85,9 @@ class Page8 extends Component {
             Prev Page
           </Button>
         </Link>
+        <Link to="/page7" style={{ textDecoration: "none" }}>
+          <Button className="leftBtn">Prev Page</Button>
+        </Link>
         <Link to="/page9" style={{ textDecoration: "none" }}>
           <Button
             autoFocus

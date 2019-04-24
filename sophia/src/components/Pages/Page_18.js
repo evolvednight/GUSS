@@ -80,6 +80,9 @@ class Page18 extends Component {
           not sure of. She asked “Wait. What Is consent?”
         </div>
         <img src={Image} alt="image" />
+        <div className="alt_text">
+        Sofia facing and talking to Dr.Q. Sofia’s brother watches as he thinks about numbers and letters.
+        </div>
         <Link to="/page17" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}

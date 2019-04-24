@@ -83,6 +83,9 @@ class Page32 extends Component {
           a symptom of asthma, but it can also be because of other things.
         </div>
         <img src={Image} alt="image" />
+        <div className="alt_text">
+        A microscope 
+        </div>
         <Link to="/page31" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}

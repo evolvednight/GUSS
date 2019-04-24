@@ -84,6 +84,9 @@ class Page23 extends Component {
           help us with that too."
         </div>
         <img src={Image} alt="image" />
+        <div className="alt_text">
+        Sofia and her brother both sitting on the counter, holding a pen with a smile while looking at Dr. Q. Sofia’s dad and Dr.Q watches the two while standing up.
+        </div>
         <Link to="/page22" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}

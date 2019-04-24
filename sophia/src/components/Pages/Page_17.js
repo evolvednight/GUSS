@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
-import Image from "./Sofia_Images/Page_17.JPG";
+import SpotDiff from "../Games/SpotDiff";
 import { Link } from "react-router-dom";
 import press from './Sounds/press.mp3';
 import sounds from './Sounds/page17.m4a';
@@ -78,7 +78,18 @@ class Page17 extends Component {
           with ball instead of truck 9. No kid on slide 10. Flower near Michael
           11. Butterfly 12. Bird on Sofia's bench
         </div>
-        <img src={Image} alt="image" />
+        
+
+        <div className = "Game_board">
+        {/* <img src={Image} alt="image" /> */}
+        <SpotDiff />
+        </div>
+
+      
+        
+
+
+
         <Link to="/page16" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
