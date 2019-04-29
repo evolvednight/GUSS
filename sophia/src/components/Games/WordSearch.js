@@ -8,7 +8,7 @@ class wordsearch extends React.Component {
     super(props);
     this.state = {
       checked : [],
-      live:"",
+      done: 0,
       answer: [
         "LEARN",
         "TREATMENT",
@@ -46,6 +46,7 @@ class wordsearch extends React.Component {
     }
   }
 
+  // Everything depends on the onClick function. All the updates are done through that
   createTable = () => {
     let table = []
     let x = 0
@@ -58,15 +59,17 @@ class wordsearch extends React.Component {
       for (let j = 0; j < 15; j++) {
         // eslint-disable-next-line no-loop-func
         children.push(<td className={this.state.words[i][j]} id={x} key={x} onClick={(e) => {
+          // this makes all the letters in the table along with the click functions
+          // the updateAnswer function checks on every click if any answer was found
           let ex = e.target.className
-          check += ex
-          // console.log(check)
+          check = check+ ex
+          console.log(check)
           e.target.style="background-color:green"
           id.push(e.target)
           for(let k = 0; k<15; k++){
-            if(check===this.state.answer[k] || check.length===10){
+            if(check===this.state.answer[k] || check.length===10 || check.length===5){
               if(check.length===10 && check!=="EXPERIMENT" && check!=="HYPOTHESIS"){
-                // console.log("not")
+                console.log("not")
                 check=""
                 for(let l =0; l<id.length; l++){
                   id[l].style ="background-color:white"
@@ -74,10 +77,30 @@ class wordsearch extends React.Component {
                 id=[]
                 continue
               }
+              if(check.length===5 && check!=="EXPER" && check!=="TREAT" && check!=="KNOWL" && check!=="LEARN" && check!=="SURVE" && check!=="MEDIC" && check!=="QUEST" && check!=="SCIEN" && check!=="RESEA" && check!=="HYPOT" && check!=="STUDY" && check!=="DOCTO" && check!="IMPRO"){
+                check=""
+                for(let l =0; l<id.length; l++){
+                  id[l].style ="background-color:white"
+                }
+                id=[]
+                continue
+              }
+              if(check.length===5){
+                if(check==="STUDY" || check==="LEARN"){
+                  this.state.checked.push(check)
+                  this.updateAnswer(check)
+                  check = ""
+                  id=[]
+                }
+                else{
+                  continue
+                }
+              }
               this.state.checked.push(check)
+              this.updateAnswer(check)
               check = ""
               id=[]
-              // console.log(this.state.checked)
+              console.log(this.state.checked)
             }
           }
         }}>{this.state.words[i][j]}</td>)
@@ -93,16 +116,33 @@ class wordsearch extends React.Component {
   createAnswerList = () =>{
     let table = []
     let x = 0;
-    // Outer loop to create parent
     for (let i = 0; i < 8; i++) {
       let children = []
       for (let j = 0; j < 2; j++) {
-        children.push(<td className={this.state.answer[x]} id={this.state.answer[x]} key={this.state.answer[x]}>{this.state.answer[x]}</td>)
+        children.push(<td className={this.state.answer[x]} id={this.state.answer[x]} ref={this.state.answer[x]}>{this.state.answer[x]}</td>)
         x++
       }
       table.push(<tr style={{marginBottom:"10rem"}}>{children}</tr>)
     }
     return table
+  }
+
+  updateAnswer = (str) => {
+    console.log(str)
+    let temp = this.state.done
+    temp++
+    let check = this.state.checked[0]
+    if(typeof this.refs[check]!=="undefined"){
+      this.refs[check].style="background-color:Green"
+      this.setState({
+        checked:[],
+        done: temp
+      })
+    }
+    if(this.state.done===14){
+      this.refs.final.style="color:red"
+    }
+    console.log(this.refs.final)
   }
 
   render() {
@@ -119,7 +159,8 @@ class wordsearch extends React.Component {
             {this.createAnswerList()}
           </div>
         </div>
-        <p>Entered: </p>
+        <p>Directions: Click on the letters that spell the words</p>
+        <div ref="final" style={{color:"white"}}>YOU DID IT!! CONGRATULATIONS!! </div>
       </div>
     )
   }
