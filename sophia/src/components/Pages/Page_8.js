@@ -26,7 +26,7 @@ class Page8 extends Component {
   render() {
     return (
       <div className="Page8">
-        <div className="text">
+        <div className="text" style={{marginBottom: "2rem",marginTop:"-2rem"}}>
           Can you help Sofia find all the words she just learned about?
         </div>
         <WordSearch />
