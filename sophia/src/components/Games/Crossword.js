@@ -6,6 +6,36 @@ import './Crossword.css';
 
 //var letters = /^[A-Za-z]+$/;
 class Crossword extends Component {
+    constructor(props) {
+      super(props);
+
+      this.state = {
+        answer1: '',
+        answer2: '',
+        answer3: '',
+        answer4: '',
+        answer5: '',
+        answer6: '',
+        answer7: '',
+        answer8: '',
+        answer9: '',
+        answer10: '',
+        answer11: '',
+      };
+    }
+    handle_value_1_input(new_value) {
+      var changeValue = (this.state.answer1).toString() + new_value;
+      changeValue = changeValue.toString();
+      this.setState({
+        answer1: changeValue
+      });
+    }
+    
+    handle_value_2_input(new_value) {
+      this.setState({
+        answer2: this.state.answer2 + new_value
+      });
+    }
 
     render() {
         return (
@@ -16,7 +46,7 @@ class Crossword extends Component {
               <td className="cell cell1" style={tdStyles}></td>
               <td className="cell cell2" style={tdStyles}></td>
               <td className="cell cell3" style={tdStyles}></td>
-              <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
+              <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={(event) => this.handle_value_1_input(event)} /></td>
               <td className="cell cell5" style={tdStyles}></td>
               <td className="cell cell6" style={tdStyles}></td>
               <td className="cell cell7" style={tdStyles}></td>
@@ -34,7 +64,7 @@ class Crossword extends Component {
               <td className="cell cell2" style={tdStyles}></td>
               <td className="cell cell3" style={tdStyles}></td>
               <td className="cell cell4">
-              <input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange}
+              <input type="text" ref="answer1807" maxLength="1" onChange={(event) => this.handle_value_1_input(event)}
               //function({
                 //      if(!ref.value.match(letters))
                   //    {
@@ -57,7 +87,7 @@ class Crossword extends Component {
               <td className="cell cell1" style={tdStyles}></td>
               <td className="cell cell2" style={tdStyles}></td>
               <td className="cell cell3" style={tdStyles}></td>
-              <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
+              <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={(event) => this.handle_value_1_input(event)} /></td>
               <td className="cell cell5" style={tdStyles}></td>
               <td className="cell cell6" style={tdStyles}></td>
               <td className="cell cell7" style={tdStyles}></td>
@@ -74,7 +104,7 @@ class Crossword extends Component {
           <td className="cell cell1" style={tdStyles}></td>
           <td className="cell cell2" style={tdStyles}></td>
           <td className="cell cell3" style={tdStyles}></td>
-          <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
+          <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={(event) => this.handle_value_1_input(event)} /></td>
           <td className="cell cell5" style={tdStyles}></td>
           <td className="cell cell6" style={tdStyles}></td>
           <td className="cell cell7" style={tdStyles}></td>
@@ -91,7 +121,7 @@ class Crossword extends Component {
           <td className="cell cell1" style={tdStyles}></td>
           <td className="cell cell2" style={tdStyles}></td>
           <td className="cell cell3" style={tdStyles}></td>
-          <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
+          <td className="cell cell4"><input type="text" ref="answer1807" maxLength="1" onChange={(event) => this.handle_value_1_input(event)} /></td>
           <td className="cell cell5" style={tdStyles}></td>
           <td className="cell cell6" style={tdStyles}></td>
           <td className="cell cell7" style={tdStyles}></td>
@@ -145,12 +175,12 @@ class Crossword extends Component {
           <td className="cell cell4" style={tdStyles}></td>
           <td className="cell cell5" style={tdStyles}></td>
           <td className="cell cell6" style={tdStyles}></td>
-          <td className="cell cell7"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
-          <td className="cell cell8"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
-          <td className="cell cell9"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
-          <td className="cell cell10"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
-          <td className="cell cell11"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
-          <td className="cell cell12"><input type="text" ref="answer1807" maxLength="1" onChange={this.handleChange} /></td>
+          <td className="cell cell7"><input type="text" ref="answer1807" maxLength="1" onChange={(event) => this.handle_value_2_input(event)} /></td>
+          <td className="cell cell8"><input type="text" ref="answer1807" maxLength="1" onChange={(event) => this.handle_value_2_input(event)} /></td>
+          <td className="cell cell9"><input type="text" ref="answer1807" maxLength="1" onChange={(event) => this.handle_value_2_input(event)} /></td>
+          <td className="cell cell10"><input type="text" ref="answer1807" maxLength="1" onChange={(event) => this.handle_value_2_input(event)} /></td>
+          <td className="cell cell11"><input type="text" ref="answer1807" maxLength="1" onChange={(event) => this.handle_value_2_input(event)} /></td>
+          <td className="cell cell12"><input type="text" ref="answer1807" maxLength="1" onChange={(event) => this.handle_value_2_input(event)} /></td>
           <td className="cell cell13" style={tdStyles}></td>
           <td className="cell cell14" style={tdStyles}></td>
             </tr>
@@ -294,6 +324,18 @@ class Crossword extends Component {
           
           </Table>
           <div className="text">
+          <h2>{this.state.answer1}</h2>
+          <h2>{this.state.answer2}</h2>
+          <h2>{this.state.answer3}</h2>
+          <h2>{this.state.answer4}</h2>
+          <h2>{this.state.answer5}</h2>
+          <h2>{this.state.answer6}</h2>
+          <h2>{this.state.answer7}</h2>
+          <h2>{this.state.answer8}</h2>
+          <h2>{this.state.answer9}</h2>
+          <h2>{this.state.answer10}</h2>
+          <h2>{this.state.answer11}</h2>
+
           </div>
           </div>
         )
