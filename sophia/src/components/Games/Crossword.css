@@ -3,6 +3,7 @@
 td {
     width: 1%;
     height: 1%;
+    border: 1px solid black;
 }
 
 tr {
