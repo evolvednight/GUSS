@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import press from './Sounds/press.mp3';
 import sounds from './Sounds/page3.m4a';
+import Crossword from "../Games/Crossword";
 class Page20 extends Component {
   constructor(props) {
     super(props);

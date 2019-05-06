@@ -25,7 +25,13 @@
   bottom: 0%;
   right: 0%;
 }
-
+.sound{
+    position:absolute;
+    transition: .5s ease;
+  top: 10%;
+  border-radius: 40%;
+  opacity: 0.3;
+}
 .Image1{
   position: absolute;
   left: 48.7%;

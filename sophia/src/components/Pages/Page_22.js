@@ -73,6 +73,7 @@ class Page22 extends Component {
       [e.target.name]: e.target.value
     });
   };
+  
 
   render() {
     return (
@@ -100,6 +101,7 @@ class Page22 extends Component {
           >
           </Button>
         </Form>
+       
 
         <div className="text">Game</div>
         <Link to="/page21" style={{ textDecoration: "none" }}>

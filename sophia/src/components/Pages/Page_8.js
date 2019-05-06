@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import WordSearch from "../Games/WordSearch";
 import press from './Sounds/press.mp3';
 import sounds from './Sounds/page8.m4a';
+import WordSearch from '../Games/WordSearch'
 class Page8 extends Component {
   constructor(props) {
     super(props);
