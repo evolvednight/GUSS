@@ -85,7 +85,7 @@ class Page22 extends Component {
         <Form style={{ margin: "10px" }} text="white">
           <Form.Group as={Row} controlId="formHorizontalEmail">
             <Form.Label column sm="5">
-              <font color="white">Answer: </font>
+              <font color="black">Answer: </font>
             </Form.Label>
             <Col sm="7">
               <Form.Control
