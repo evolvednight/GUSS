@@ -1,6 +1,6 @@
 .text {
-  font-family: verdana;
-  font-size: 30px;
+  font-family:cursive;
+  font-size: 32px;
   font-size: 4vw;
   font-size: 4vh;
   font-weight: 200;
@@ -8,8 +8,22 @@
   padding-left: 200px;
   padding-right: 200px;
   padding-top: 10%;
+  color: rgb(19, 61, 138);
 }
 
+.Game_16{
+  background-size: contain;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./Sofia_Images/Page_16.JPG);
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+}
 
 .leftBtn {
   position: fixed;

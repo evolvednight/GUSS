@@ -82,6 +82,10 @@ class Page13 extends Component {
           sound
         </Button>
         <img src={Image} alt="image" />
+                <div className="alt_text">
+        A doctor is measuring the height and weight of a boy.
+        </div>
+        
         <Link to="/page12" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}

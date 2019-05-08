@@ -71,16 +71,14 @@ class Page17 extends Component {
     return (
       <div className="Page17">
         <div className="text">
-          There are 12 differences. Did you find them all? Differences on the
-          playground: 1. No flying bugs 2. Long sleeves and pants on Sofia 3. No
-          bug bites on Sofia 4. Long sleeves and pants on Michael 5. No bug
-          bites on Michael 6. Hat on Sofia 7. Bottle of bug spray 8. Kid playing
-          with ball instead of truck 9. No kid on slide 10. Flower near Michael
-          11. Butterfly 12. Bird on Sofia's bench
+         There are 9 differences. Can you find them all?
         </div>
+<<<<<<< HEAD
         <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
           sound
         </Button>
+=======
+>>>>>>> 51b0ff1d58941a9a62fbcbf0bfeab5dc595ceed6
         
 
         <div className = "Game_board">

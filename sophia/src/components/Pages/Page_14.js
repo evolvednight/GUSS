@@ -89,6 +89,9 @@ class Page14 extends Component {
           sound
         </Button>
         <img src={Image} alt="image" />
+        <div className="alt_text">
+        A container that holds six tubes of blood.
+        </div>
         <Link to="/page13" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}

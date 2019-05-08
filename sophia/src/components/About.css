@@ -15,6 +15,7 @@
 }
 
 .about-card {
+  font-family: Verdana;
   margin-top: 2rem;
   transition: 500ms;
   padding: 2rem 2rem 2rem 2rem;
@@ -23,7 +24,7 @@
   font-size: 20px;
   text-align: left;
   font-size: 4vw;
-  font-size: 4vh;
+  font-size: 2vh;
 }
 
 .about-card:hover {

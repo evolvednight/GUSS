@@ -81,6 +81,9 @@ class Page15 extends Component {
           sound
         </Button>
         <img src={Image} alt="image" />
+        <div className="alt_text">
+        Sofia thinking about tying her shoelace into a bow.
+        </div>
         <Link to="/page14" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}

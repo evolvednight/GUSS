@@ -1,23 +1,39 @@
 .sofia_head{
     position: absolute;
+<<<<<<< HEAD
     left: 52.2%;
     top: 65%;
+=======
+    left: 53.2%;
+    top: 50%;
+>>>>>>> 51b0ff1d58941a9a62fbcbf0bfeab5dc595ceed6
 }
 
 .bird{
     position: absolute;
+<<<<<<< HEAD
     left: 64.6%;
     top: 64%;
+=======
+    left: 67.2%;
+    top: 50%;
+>>>>>>> 51b0ff1d58941a9a62fbcbf0bfeab5dc595ceed6
 }
 
 .bottle{
     position: absolute;
+<<<<<<< HEAD
     left: 59.1%;
     top: 73%;
+=======
+    left: 60.9%;
+    top: 65%;
+>>>>>>> 51b0ff1d58941a9a62fbcbf0bfeab5dc595ceed6
 }
 
 .ball{
     position: absolute;
+<<<<<<< HEAD
     left: 41.4%;
     top: 73%;
 }
@@ -25,28 +41,75 @@
     position: absolute;
     left: 31.3%;
     top: 56%;
+=======
+    left: 40.8%;
+    top: 66%;
+}
+.michael{
+    position: absolute;
+    left: 29.4%;
+    top: 36%;
+>>>>>>> 51b0ff1d58941a9a62fbcbf0bfeab5dc595ceed6
 }
 
 .butterfly{
     position: absolute;
+<<<<<<< HEAD
     left: 42.4%;
     top: 80.5%;
+=======
+    left: 42%;
+    top: 79%;
+>>>>>>> 51b0ff1d58941a9a62fbcbf0bfeab5dc595ceed6
 }
 
 .no_bug{
     position: absolute;
+<<<<<<< HEAD
     left: 58%;
     top: 62%;
+=======
+    left: 62%;
+    top: 44%;
+>>>>>>> 51b0ff1d58941a9a62fbcbf0bfeab5dc595ceed6
 }
 
 .flower{
     position: absolute;
+<<<<<<< HEAD
     left: 26.9%;
     top: 68.7%;
+=======
+    left: 24.4%;
+    top: 57%;
+>>>>>>> 51b0ff1d58941a9a62fbcbf0bfeab5dc595ceed6
 }
 
 .slide{
     position: absolute;
+<<<<<<< HEAD
     left: 26.9%;
     top: 53%;
 }
+=======
+    left: 24.9%;
+    top: 30%;
+    background-size: contain;
+}
+
+
+
+.Spot_the_difference_game{
+    background-size: contain;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Pages/Sofia_Images/Page_17.JPG);
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+>>>>>>> 51b0ff1d58941a9a62fbcbf0bfeab5dc595ceed6
