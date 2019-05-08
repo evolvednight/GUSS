@@ -20,3 +20,18 @@ Feature: Fix the background image of the whole game board by making it re-size w
 4) Image of the background should change in size when too small
 5) Click next page
 6) Repeat step 4
+
+Survey
+1) On landing page, click start story
+2) Click "Next" untill page 11 ( can be seen in URL)
+3) Click on Hyperlink "Click Here" on the page
+4) A survey should pop open on a new window or tab
+5) There, the survey should have field to complete and questions that match the pages ahead
+
+Crack the Code
+1) On landing page, click start story
+2) Click "Next" untill page 22 ( can be seen in URL)
+3) Click on the text box and try any numbers or keys
+4) Typing in the correct answer for crack the code and pressing submit should alert a browser message "Correct!"
+5) Typing in anything but the correct answer and pressing submit should alert a browser message "Incorrect, please try again"
+6) After any alert message, pressing okay closes the alert message and resets the text field
