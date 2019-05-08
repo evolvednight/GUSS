@@ -23,6 +23,8 @@ Feature: Fix the background image of the whole game board by making it re-size w
 6) Click next page
 7) Repeat step 4
 
+Task: Finalize Word Search game
+
 Feature: Create a function that accesses every element of the table
 1) Go to the website https://sofiastorybook.herokuapp.com/
 2) Click on skip pages button
@@ -76,15 +78,36 @@ Test: Write test cases for Word searched
 3) Click on Word Find button
 4) If the page renders with all the tables, the test passes. If not, the test fails
 
-Game: Finalize Word Search game
-1) Go to the website https://sofiastorybook.herokuapp.com/
-2) Click on skip pages button
-3) Click on Word Find button
-4) There should be a table of letters on the left side of the page and a table of words on the right side of the page
-5) Click on the letters that corresponds to the right words from the table called words. Clicking will turn the boxes green
-6) Once a correct sequence is pressed, the boxes containing the letters will stay green
-7) The word corresponding to the sequence pressed, will turn and stay green on the table called words
-8) Repeat for all the words
-9) If a correct sequence is not pressed, the boxes containing the letters will go back to being white
-10) Any deviation from the correct sequence will make the letters go back to being white
-11) When all the correct words are found and pressed, a congratulations message will pop up
+Task: Finalize Survey and Sound
+
+1) On landing page, click start story
+2) Click "Next" untill page 11 ( can be seen in URL)
+3) Click on Hyperlink "Click Here" on the page
+4) A survey should pop open on a new window or tab
+5) There, the survey should have field to complete and questions that match the pages ahead
+
+Task: Finalize Crack the Code game
+
+1) On landing page, click start story
+2) Click "Next" untill page 22 ( can be seen in URL)
+3) Click on the text box and try any numbers or keys
+4) Typing in the correct answer for crack the code and pressing submit should alert a browser message "Correct!"
+5) Typing in anything but the correct answer and pressing submit should alert a browser message "Incorrect, please try again"
+6) After any alert message, pressing okay closes the alert message and resets the text field
+
+Feature: Add input function to each text box of the Crossword
+1) go to https://sofiastorybook.herokuapp.com/page20
+2) try to do input on each text box
+3) user should see the keyed in character
+
+Feature: Create function that every time input changes it will change the state of the crossword
+1) go to https://sofiastorybook.herokuapp.com/page20
+2) try to do input on each text box
+3) go to bottom of the page
+4) user should see words or character from the input box appear at the bottom
+
+Feature: Check if final input is correct or not
+1) go to https://sofiastorybook.herokuapp.com/page20
+2) try to do input on each text box
+3) user should try to input d a t a in column 13 vertically
+4) user should see green background in the cell if enter correctly
