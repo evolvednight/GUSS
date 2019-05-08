@@ -35,6 +35,9 @@ class Page4 extends Component {
           meet you, too. We would like to hear more about it. Thank you."
         </div>
         <img src={Image} alt="image" />
+        <div className="alt_text">
+        Sofia thinks about a rat in a maze.
+        </div>
         <Link to="/page3" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}

@@ -33,7 +33,11 @@ class Page16 extends Component {
           sun protection. The second picture is how she looked the following
           week after remembering her bug spray and sun protection.
         </div>
-        <img src={Image} alt="image" />
+        {/* <img src={Image} alt="image" /> */}
+
+        <div className="Game_16">
+        </div>
+
         <Link to="/page15" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}

@@ -32,7 +32,7 @@ class Page33 extends Component {
           Family The Knowles Family The Liss Family The Molnar We couldn't have
           done it without you!
         </div>
-        <Link to="/page1">
+        <Link to="/page32">
           <Button
             onKeyDown={this.handleKeyPress}
             ref="leftBtn"
