@@ -7,7 +7,9 @@ class wordsearch extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      // The state check is used to store a found word. Not all of them, only one at a time
       checked : [],
+      // The state done is used only to check if a player has found all the 15 words
       done: 0,
       answer: [
         "LEARN",
@@ -49,35 +51,44 @@ class wordsearch extends React.Component {
   // Everything depends on the onClick function. All the updates are done through that
   createTable = () => {
     let table = []
+    // Used the variable x to use as ID and Key on each of the td components
     let x = 0
     let check = ""
+    // The variable check stores each of the pressed letters
     let id = []
+    // The variable id stores the components that were pressed. By storing them here, I can access them later on when I want to change their styles
     // Outer loop to create parent
     for (let i = 0; i < 15; i++) {
       let children = []
       //Inner loop to create children
       for (let j = 0; j < 15; j++) {
         // eslint-disable-next-line no-loop-func
-        children.push(<td className={this.state.words[i][j]} id={x} key={x} onClick={(e) => {
+        children.push(<td className={this.state.words[i][j]} id={x} ref={x} key={x} onClick={(e) => {
           // this makes all the letters in the table along with the click functions
           // the updateAnswer function checks on every click if any answer was found
           let ex = e.target.className
           check = check+ ex
           console.log(check)
           e.target.style="background-color:green"
+          // The pressed letter is turned into green
           id.push(e.target)
+          // The actual component is stored into id
           for(let k = 0; k<15; k++){
             if(check===this.state.answer[k] || check.length===10 || check.length===5){
+              // Checks whether a user found the correct answer or is on the wrong path
               if(check.length===10 && check!=="EXPERIMENT" && check!=="HYPOTHESIS"){
+                // Checks if the user is on the wrong path after getting 5 correct letters
                 console.log("not")
                 check=""
                 for(let l =0; l<id.length; l++){
                   id[l].style ="background-color:white"
+                  // Changes the components color to white if a wwrong sequence of letters were pressed
                 }
                 id=[]
                 continue
               }
               if(check.length===5 && check!=="EXPER" && check!=="TREAT" && check!=="KNOWL" && check!=="LEARN" && check!=="SURVE" && check!=="MEDIC" && check!=="QUEST" && check!=="SCIEN" && check!=="RESEA" && check!=="HYPOT" && check!=="STUDY" && check!=="DOCTO" && check!="IMPRO"){
+                // Checks whether a user is on the wrong path before getting 5 correct letters
                 check=""
                 for(let l =0; l<id.length; l++){
                   id[l].style ="background-color:white"
@@ -87,6 +98,7 @@ class wordsearch extends React.Component {
               }
               if(check.length===5){
                 if(check==="STUDY" || check==="LEARN"){
+                  // Checks only for these two words since they are 5 letters in length and I am checking for a sequence of 5 correct presses in order to refresh colors
                   this.state.checked.push(check)
                   this.updateAnswer(check)
                   check = ""
@@ -96,6 +108,7 @@ class wordsearch extends React.Component {
                   continue
                 }
               }
+              // If everything above was correct, checked is updated and the updateAnswer function is called
               this.state.checked.push(check)
               this.updateAnswer(check)
               check = ""
