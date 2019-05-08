@@ -35,3 +35,20 @@ Crack the Code
 4) Typing in the correct answer for crack the code and pressing submit should alert a browser message "Correct!"
 5) Typing in anything but the correct answer and pressing submit should alert a browser message "Incorrect, please try again"
 6) After any alert message, pressing okay closes the alert message and resets the text field
+
+Feature: Add input function to each text box of the Crossword
+1) go to https://sofiastorybook.herokuapp.com/page20
+2) try to do input on each text box
+3) user should see the keyed in character
+
+Feature: Create function that every time input changes it will change the state of the crossword
+1) go to https://sofiastorybook.herokuapp.com/page20
+2) try to do input on each text box
+3) go to bottom of the page
+4) user should see words or character from the input box appear at the bottom
+
+Feature: Check if final input is correct or not
+1) go to https://sofiastorybook.herokuapp.com/page20
+2) try to do input on each text box
+3) user should try to input d a t a in column 13 vertically
+4) user should see green background in the cell if enter correctly
