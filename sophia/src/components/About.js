@@ -32,6 +32,15 @@ class About extends Component {
             book, please contact CTSI Administration 875 Ellicott Street
             Buffalo, NY 14203 716-829-2272
           </p>
+          <Link to="/page33" style={{ textDecoration: "none" }}>
+          <Button
+            onKeyDown={this.handleKeyPress}
+            ref="leftBtn"
+            className="leftBtn"
+          >
+            Prev Page
+          </Button>
+        </Link>
           <Link to="/" style={{ textDecoration: "none" }}>
             <Button autoFocus ref="rightBtn" className="rightBtn">
               HOME PAGE

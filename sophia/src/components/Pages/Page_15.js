@@ -78,6 +78,9 @@ class Page15 extends Component {
           anymore. It's great!'
         </div>
         <img src={Image} alt="image" />
+        <div className="alt_text">
+        Sofia thinking about tying her shoelace into a bow.
+        </div>
         <Link to="/page14" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}

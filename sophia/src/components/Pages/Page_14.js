@@ -86,6 +86,9 @@ class Page14 extends Component {
           try an old one. This is to see if the new one works better.”
         </div>
         <img src={Image} alt="image" />
+        <div className="alt_text">
+        A container that holds six tubes of blood.
+        </div>
         <Link to="/page13" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
