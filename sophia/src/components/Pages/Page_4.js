@@ -79,6 +79,9 @@ class Page4 extends Component {
           Is that okay with you?” said Dr. Q. Sofia's dad said, “It's nice to
           meet you, too. We would like to hear more about it. Thank you."
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <img src={Image} alt="image" />
         <div className="alt_text">
         Sofia thinks about a rat in a maze.
@@ -104,9 +107,7 @@ class Page4 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

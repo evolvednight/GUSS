@@ -82,7 +82,9 @@ class Page1 extends Component {
           a lot to make sure she had the right medicine to help her lungs work.
           She was tired of going to the doctor's.
         </div>
-
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <img src={Image} alt="image" />
 
         <Link to="/" style={{ textDecoration: "none" }}>
@@ -106,9 +108,7 @@ class Page1 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

@@ -83,6 +83,9 @@ class Page23 extends Component {
           we know you're healthy inside and out! There are other tests that will
           help us with that too."
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <img src={Image} alt="image" />
         <div className="alt_text">
         Sofia and her brother both sitting on the counter, holding a pen with a smile while looking at Dr. Q. Sofia’s dad and Dr.Q watches the two while standing up.
@@ -108,9 +111,7 @@ class Page23 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

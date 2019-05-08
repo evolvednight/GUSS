@@ -110,7 +110,13 @@ class Page31 extends Component {
           </p>
 
         </div>
+<<<<<<< HEAD
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
+=======
         
+>>>>>>> 51b0ff1d58941a9a62fbcbf0bfeab5dc595ceed6
         <Link to="/page30" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
@@ -132,9 +138,7 @@ class Page31 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

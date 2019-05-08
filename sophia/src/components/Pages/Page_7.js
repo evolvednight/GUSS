@@ -83,6 +83,9 @@ class Page7 extends Component {
           to take better care of people!" Sofia needed to think about all of
           this, and she wasn't sure she could remember…
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <img src={Image} alt="image" />
         <div className="alt_text">
         Four bacterias. One circular one with other smaller circles in it. One long one with spiky ball frills coming out of it. One small long one with small spikes coming out of it. One spiky ball one with medium circles in it.
@@ -108,9 +111,7 @@ class Page7 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} ref="sound" onKeyDown={this.handleKeyPress} className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

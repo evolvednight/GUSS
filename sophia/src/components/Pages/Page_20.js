@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import press from './Sounds/press.mp3';
 import sounds from './Sounds/page3.m4a';
+import Crossword from "../Games/Crossword";
 class Page20 extends Component {
   constructor(props) {
     super(props);
@@ -72,7 +73,9 @@ class Page20 extends Component {
         <div className="text">
           Lots and Lots of Research Words Complete the crossword below
         </div>
-
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <div className="text">Game</div>
         <Link to="/page19" style={{ textDecoration: "none" }}>
           <Button
@@ -95,9 +98,7 @@ class Page20 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

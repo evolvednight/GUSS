@@ -84,7 +84,9 @@ class Page21 extends Component {
           how you feel. 5. A child's or teenager's agreement to be part of a
           study 8. A person that is gathering information in the study
         </div>
-
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <div className="text">Game</div>
         <Link to="/page20" style={{ textDecoration: "none" }}>
           <Button
@@ -107,9 +109,6 @@ class Page21 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
       </div>
     );
   }

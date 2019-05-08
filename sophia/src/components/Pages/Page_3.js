@@ -80,6 +80,9 @@ class Page3 extends Component {
           movies with mad scientists and wild experiments. She was not a guinea
           pig!
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <img src={Image} alt="image" />
         <div className="alt_text">
         Dr. Amanda Quinby walks in smiling into the room. Sofia’s dad and brother sitting on the chair  look at Dr. Amanda with a smile. Sofia frowns at the sight of Dr. Amanda. Dr. Wilson stood in the room still talking to Sofia.

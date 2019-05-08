@@ -1,10 +1,16 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
+import press from './Sounds/press.mp3';
+import sounds from './Sounds/page8.m4a';
+import WordSearch from '../Games/WordSearch'
+=======
 import WordSearch from "../Games/WordSearch";
 
 import press from './Sounds/press.mp3';
 import sounds from './Sounds/page8.m4a';
+>>>>>>> 51b0ff1d58941a9a62fbcbf0bfeab5dc595ceed6
 class Page8 extends Component {
   constructor(props) {
     super(props);
@@ -74,8 +80,18 @@ class Page8 extends Component {
         <div className="text" style={{marginBottom: "2rem",marginTop:"-2rem"}}>
           Can you help Sofia find all the words she just learned about?
         </div>
+<<<<<<< HEAD
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <WordSearch />
         <div className="text" />
+
+        <div className="text">Game</div>
+=======
+        <WordSearch />
+        <div className="text" />
+>>>>>>> 51b0ff1d58941a9a62fbcbf0bfeab5dc595ceed6
         <Link to="/page7" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
@@ -100,9 +116,7 @@ class Page8 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }
