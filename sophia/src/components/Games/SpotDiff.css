@@ -1,0 +1,69 @@
+.sofia_head{
+    position: absolute;
+    left: 53.2%;
+    top: 50%;
+}
+
+.bird{
+    position: absolute;
+    left: 67.2%;
+    top: 50%;
+}
+
+.bottle{
+    position: absolute;
+    left: 60.9%;
+    top: 65%;
+}
+
+.ball{
+    position: absolute;
+    left: 40.8%;
+    top: 66%;
+}
+.michael{
+    position: absolute;
+    left: 29.4%;
+    top: 36%;
+}
+
+.butterfly{
+    position: absolute;
+    left: 42%;
+    top: 79%;
+}
+
+.no_bug{
+    position: absolute;
+    left: 62%;
+    top: 44%;
+}
+
+.flower{
+    position: absolute;
+    left: 24.4%;
+    top: 57%;
+}
+
+.slide{
+    position: absolute;
+    left: 24.9%;
+    top: 30%;
+    background-size: contain;
+}
+
+
+
+.Spot_the_difference_game{
+    background-size: contain;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Pages/Sofia_Images/Page_17.JPG);
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}

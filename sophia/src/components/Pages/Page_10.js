@@ -76,6 +76,9 @@ class Page10 extends Component {
           is interested in learning more about.
         </div>
         <img src={Image} alt="image" />
+        <div className="alt_text">
+        A teacher showing a diagram of human lungs to a group of children sitting in a circle on the carpet in the classroom.
+        </div>
         <Link to="/page9" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
