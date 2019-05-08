@@ -80,13 +80,9 @@ class Page12 extends Component {
         </Button>
         <img src={Image1} alt="image" />
         <img src={Image} alt="image" />
-<<<<<<< HEAD
-        
-=======
         <div className="alt_text">
         Someone taking blood from a person's arm using a syringe. A tube of blood is inserted into a machine to seperate the blood into layers. These layers are plasma, white, and red blood cells. There is a miscroscope looking into a sample of blood.
         </div>
->>>>>>> 51b0ff1d58941a9a62fbcbf0bfeab5dc595ceed6
         <Link to="/page11" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
