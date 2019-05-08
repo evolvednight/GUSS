@@ -78,13 +78,17 @@ Test: Write test cases for Word searched
 3) Click on Word Find button
 4) If the page renders with all the tables, the test passes. If not, the test fails
 
-Task: Finalize Survey and Sound
+Task: Finalize Survey and Sound + Sound pause and play
 
 1) On landing page, click start story
 2) Click "Next" untill page 11 ( can be seen in URL)
 3) Click on Hyperlink "Click Here" on the page
 4) A survey should pop open on a new window or tab
 5) There, the survey should have field to complete and questions that match the pages ahead
+6) On any page, there should be a sound button
+7) pressing on any sound button plays audio
+8) pressing on any button while any audio is playing pauses the current audio and starts a new one
+9) pressing Prev or Next will cancel the audio and play their own
 
 Task: Finalize Crack the Code game
 
