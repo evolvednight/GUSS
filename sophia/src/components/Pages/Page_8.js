@@ -1,13 +1,10 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
 import WordSearch from "../Games/WordSearch";
 
-=======
 import press from './Sounds/press.mp3';
 import sounds from './Sounds/page8.m4a';
->>>>>>> Sound_mergeFix
 class Page8 extends Component {
   constructor(props) {
     super(props);
@@ -77,13 +74,8 @@ class Page8 extends Component {
         <div className="text" style={{marginBottom: "2rem",marginTop:"-2rem"}}>
           Can you help Sofia find all the words she just learned about?
         </div>
-<<<<<<< HEAD
         <WordSearch />
         <div className="text" />
-=======
-
-        <div className="text">Game</div>
->>>>>>> Sound_mergeFix
         <Link to="/page7" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
@@ -93,12 +85,9 @@ class Page8 extends Component {
           >
             Prev Page
           </Button>
-<<<<<<< HEAD
         </Link>
         <Link to="/page7" style={{ textDecoration: "none" }}>
           <Button className="leftBtn">Prev Page</Button>
-=======
->>>>>>> Sound_mergeFix
         </Link>
         <Link to="/page9" style={{ textDecoration: "none" }}>
           <Button

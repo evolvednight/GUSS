@@ -172,9 +172,9 @@ class Crossword extends Component {
       answer2[parseInt(answerNum[1])] = changeValue; //execute the manipulations
       this.setState({answer2})
       if(newTwo === this.state.answer[1]) {
-        this.refs.two.style="background:green";
+        this.className.two.style="background:green";
       } else {
-        this.refs.two.style="background:white";
+        this.className.two.style="background:white";
       }
     }
     console.log({newOne});
