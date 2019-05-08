@@ -1,9 +1,14 @@
-import React, { Component } from "react";
+import React from 'react';
+import { Table } from 'react-bootstrap';
+import "./WordSearch.css";
 
-class WordSearch extends Component {
+class wordsearch extends React.Component {
+  
   constructor(props) {
     super(props);
     this.state = {
+      checked : [],
+      done: 0,
       answer: [
         "LEARN",
         "TREATMENT",
@@ -20,279 +25,146 @@ class WordSearch extends Component {
         "SCIENTIST",
         "STUDY",
         "DOCTOR"
+      ],
+      words: [
+        "IPWYSCIENTISTWF",
+        "HJKNOWLEDGEWUNE",
+        "YNLKHELPORINARX",
+        "PVQUESTIONTAYNP",
+        "OSTUDYAGFCGHYGE",
+        "TOHMQSRLEKOBTRR",
+        "HLJAARCBEUZHREI",
+        "ELKUMEDIJAVXESM",
+        "SKXICEINEWRHAEE",
+        "IDYMEEDSYNNNTAN",
+        "SOZPGNRIUOCXMRT",
+        "LCLREHWWCRNEECP",
+        "RTBOTEUYUIVPNHB",
+        "NOEVFJEUEDNETEB",
+        "ERHELEHZORXEYOS"
       ]
-    };
+    }
   }
 
-  check = e => {
-    console.log("hello");
-  };
+  // Everything depends on the onClick function. All the updates are done through that
+  createTable = () => {
+    let table = []
+    let x = 0
+    let check = ""
+    let id = []
+    // Outer loop to create parent
+    for (let i = 0; i < 15; i++) {
+      let children = []
+      //Inner loop to create children
+      for (let j = 0; j < 15; j++) {
+        // eslint-disable-next-line no-loop-func
+        children.push(<td className={this.state.words[i][j]} id={x} key={x} onClick={(e) => {
+          // this makes all the letters in the table along with the click functions
+          // the updateAnswer function checks on every click if any answer was found
+          let ex = e.target.className
+          check = check+ ex
+          console.log(check)
+          e.target.style="background-color:green"
+          id.push(e.target)
+          for(let k = 0; k<15; k++){
+            if(check===this.state.answer[k] || check.length===10 || check.length===5){
+              if(check.length===10 && check!=="EXPERIMENT" && check!=="HYPOTHESIS"){
+                console.log("not")
+                check=""
+                for(let l =0; l<id.length; l++){
+                  id[l].style ="background-color:white"
+                }
+                id=[]
+                continue
+              }
+              if(check.length===5 && check!=="EXPER" && check!=="TREAT" && check!=="KNOWL" && check!=="LEARN" && check!=="SURVE" && check!=="MEDIC" && check!=="QUEST" && check!=="SCIEN" && check!=="RESEA" && check!=="HYPOT" && check!=="STUDY" && check!=="DOCTO" && check!="IMPRO"){
+                check=""
+                for(let l =0; l<id.length; l++){
+                  id[l].style ="background-color:white"
+                }
+                id=[]
+                continue
+              }
+              if(check.length===5){
+                if(check==="STUDY" || check==="LEARN"){
+                  this.state.checked.push(check)
+                  this.updateAnswer(check)
+                  check = ""
+                  id=[]
+                }
+                else{
+                  continue
+                }
+              }
+              this.state.checked.push(check)
+              this.updateAnswer(check)
+              check = ""
+              id=[]
+              console.log(this.state.checked)
+            }
+          }
+        }}>{this.state.words[i][j]}</td>)
+        x = x+1
+      }
+      //Create the parent and add the children
+      table.push(<tr>{children}</tr>)
+      x=x+1
+    }
+    return table
+  }
+
+  createAnswerList = () =>{
+    let table = []
+    let x = 0;
+    for (let i = 0; i < 8; i++) {
+      let children = []
+      for (let j = 0; j < 2; j++) {
+        children.push(<td className={this.state.answer[x]} id={this.state.answer[x]} ref={this.state.answer[x]}>{this.state.answer[x]}</td>)
+        x++
+      }
+      table.push(<tr style={{marginBottom:"10rem"}}>{children}</tr>)
+    }
+    return table
+  }
+
+  updateAnswer = (str) => {
+    console.log(str)
+    let temp = this.state.done
+    temp++
+    let check = this.state.checked[0]
+    if(typeof this.refs[check]!=="undefined"){
+      this.refs[check].style="background-color:Green"
+      this.setState({
+        checked:[],
+        done: temp
+      })
+    }
+    if(this.state.done===14){
+      this.refs.final.style="color:red"
+    }
+    console.log(this.refs.final)
+  }
 
   render() {
-    return (
-      <div className="WordSearch">
-        <table className="puzzle" class="center">
-          <tr className="row0">
-            <td onMouseEnter={this.check()} className="cell cell0">
-              I
-            </td>
-            <td className="cell cell1">P</td>
-            <td className="cell cell2">W</td>
-            <td className="cell cell3">Y</td>
-            <td className="cell cell4">S</td>
-            <td className="cell cell5">C</td>
-            <td className="cell cell6">I</td>
-            <td className="cell cell7">E</td>
-            <td className="cell cell8">N</td>
-            <td className="cell cell9">T</td>
-            <td className="cell cell10">I</td>
-            <td className="cell cell11">S</td>
-            <td className="cell cell12">T</td>
-            <td className="cell cell13">W</td>
-            <td className="cell cell14">F</td>
-          </tr>
-          <tr className="row1">
-            <td className="cell cell0">H</td>
-            <td className="cell cell1">J</td>
-            <td className="cell cell2">K</td>
-            <td className="cell cell3">N</td>
-            <td className="cell cell4">O</td>
-            <td className="cell cell5">W</td>
-            <td className="cell cell6">L</td>
-            <td className="cell cell7">E</td>
-            <td className="cell cell8">D</td>
-            <td className="cell cell9">G</td>
-            <td className="cell cell10">E</td>
-            <td className="cell cell11">W</td>
-            <td className="cell cell12">U</td>
-            <td className="cell cell13">N</td>
-            <td className="cell cell14">E</td>
-          </tr>
-          <tr className="row2">
-            <td className="cell cell0">Y</td>
-            <td className="cell cell1">N</td>
-            <td className="cell cell2">L</td>
-            <td className="cell cell3">K</td>
-            <td className="cell cell4">H</td>
-            <td className="cell cell5">E</td>
-            <td className="cell cell6">L</td>
-            <td className="cell cell7">P</td>
-            <td className="cell cell8">O</td>
-            <td className="cell cell9">R</td>
-            <td className="cell cell10">I</td>
-            <td className="cell cell11">N</td>
-            <td className="cell cell12">A</td>
-            <td className="cell cell13">R</td>
-            <td className="cell cell14">X</td>
-          </tr>
-          <tr className="row3">
-            <td className="cell cell0">P</td>
-            <td className="cell cell1">V</td>
-            <td className="cell cell2">Q</td>
-            <td className="cell cell3">U</td>
-            <td className="cell cell4">E</td>
-            <td className="cell cell5">S</td>
-            <td className="cell cell6">T</td>
-            <td className="cell cell7">I</td>
-            <td className="cell cell8">O</td>
-            <td className="cell cell9">N</td>
-            <td className="cell cell10">T</td>
-            <td className="cell cell11">A</td>
-            <td className="cell cell12">Y</td>
-            <td className="cell cell13">N</td>
-            <td className="cell cell14">P</td>
-          </tr>
-          <tr className="row4">
-            <td className="cell cell0">O</td>
-            <td className="cell cell1">S</td>
-            <td className="cell cell2">T</td>
-            <td className="cell cell3">U</td>
-            <td className="cell cell4">D</td>
-            <td className="cell cell5">Y</td>
-            <td className="cell cell6">A</td>
-            <td className="cell cell7">G</td>
-            <td className="cell cell8">F</td>
-            <td className="cell cell9">C</td>
-            <td className="cell cell10">F</td>
-            <td className="cell cell11">H</td>
-            <td className="cell cell12">Y</td>
-            <td className="cell cell13">G</td>
-            <td className="cell cell14">E</td>
-          </tr>
-          <tr className="row5">
-            <td className="cell cell0"> T</td>
-            <td className="cell cell1"> O</td>
-            <td className="cell cell2"> H</td>
-            <td className="cell cell3"> M</td>
-            <td className="cell cell4"> Q</td>
-            <td className="cell cell5"> S</td>
-            <td className="cell cell6"> R</td>
-            <td className="cell cell7"> L</td>
-            <td className="cell cell8"> E</td>
-            <td className="cell cell9"> K</td>
-            <td className="cell cell10">O </td>
-            <td className="cell cell11"> B</td>
-            <td className="cell cell12"> T</td>
-            <td className="cell cell13"> R</td>
-            <td className="cell cell14"> R</td>
-          </tr>
-          <tr className="row6">
-            <td className="cell cell0">H </td>
-            <td className="cell cell1">L </td>
-            <td className="cell cell2">J </td>
-            <td className="cell cell3">A </td>
-            <td className="cell cell4">A </td>
-            <td className="cell cell5">R </td>
-            <td className="cell cell6">C </td>
-            <td className="cell cell7">B </td>
-            <td className="cell cell8">E </td>
-            <td className="cell cell9">U </td>
-            <td className="cell cell10">Z </td>
-            <td className="cell cell11"> H</td>
-            <td className="cell cell12"> R</td>
-            <td className="cell cell13"> E</td>
-            <td className="cell cell14"> I</td>
-          </tr>
-          <tr className="row7">
-            <td className="cell cell0"> E</td>
-            <td className="cell cell1"> L</td>
-            <td className="cell cell2"> K</td>
-            <td className="cell cell3"> U</td>
-            <td className="cell cell4"> M</td>
-            <td className="cell cell5"> E</td>
-            <td className="cell cell6"> D</td>
-            <td className="cell cell7"> I</td>
-            <td className="cell cell8"> J</td>
-            <td className="cell cell9"> A</td>
-            <td className="cell cell10">V </td>
-            <td className="cell cell11">X </td>
-            <td className="cell cell12">E </td>
-            <td className="cell cell13">S </td>
-            <td className="cell cell14">M </td>
-          </tr>
-          <tr className="row8">
-            <td className="cell cell0"> S</td>
-            <td className="cell cell1"> K</td>
-            <td className="cell cell2"> X</td>
-            <td className="cell cell3"> I</td>
-            <td className="cell cell4"> C</td>
-            <td className="cell cell5"> E</td>
-            <td className="cell cell6"> I</td>
-            <td className="cell cell7"> N</td>
-            <td className="cell cell8"> E</td>
-            <td className="cell cell9"> W</td>
-            <td className="cell cell10">R </td>
-            <td className="cell cell11">H </td>
-            <td className="cell cell12">A </td>
-            <td className="cell cell13">E </td>
-            <td className="cell cell14">E </td>
-          </tr>
-          <tr className="row9">
-            <td className="cell cell0"> I</td>
-            <td className="cell cell1"> D</td>
-            <td className="cell cell2"> Y</td>
-            <td className="cell cell3"> M</td>
-            <td className="cell cell4"> E</td>
-            <td className="cell cell5"> E</td>
-            <td className="cell cell6"> D</td>
-            <td className="cell cell7"> S</td>
-            <td className="cell cell8"> Y</td>
-            <td className="cell cell9"> N</td>
-            <td className="cell cell10">N </td>
-            <td className="cell cell11">N </td>
-            <td className="cell cell12">T </td>
-            <td className="cell cell13">A </td>
-            <td className="cell cell14">N </td>
-          </tr>
-          <tr className="row10">
-            <td className="cell cell0"> S</td>
-            <td className="cell cell1"> O</td>
-            <td className="cell cell2"> Z</td>
-            <td className="cell cell3"> P</td>
-            <td className="cell cell4"> G</td>
-            <td className="cell cell5"> n</td>
-            <td className="cell cell6"> R</td>
-            <td className="cell cell7"> I</td>
-            <td className="cell cell8"> U</td>
-            <td className="cell cell9"> O</td>
-            <td className="cell cell10"> C</td>
-            <td className="cell cell11">X </td>
-            <td className="cell cell12">M </td>
-            <td className="cell cell13">R </td>
-            <td className="cell cell14">T </td>
-          </tr>
-          <tr className="row11">
-            <td className="cell cell0"> L</td>
-            <td className="cell cell1"> C</td>
-            <td className="cell cell2"> L</td>
-            <td className="cell cell3"> R</td>
-            <td className="cell cell4"> E</td>
-            <td className="cell cell5"> H</td>
-            <td className="cell cell6"> W</td>
-            <td className="cell cell7"> W</td>
-            <td className="cell cell8"> C</td>
-            <td className="cell cell9"> R</td>
-            <td className="cell cell10">N </td>
-            <td className="cell cell11">E </td>
-            <td className="cell cell12">E </td>
-            <td className="cell cell13">C </td>
-            <td className="cell cell14">P </td>
-          </tr>
-          <tr className="row12">
-            <td className="cell cell0"> R</td>
-            <td className="cell cell1"> T</td>
-            <td className="cell cell2"> B</td>
-            <td className="cell cell3"> O</td>
-            <td className="cell cell4"> T</td>
-            <td className="cell cell5"> E</td>
-            <td className="cell cell6"> U</td>
-            <td className="cell cell7"> Y</td>
-            <td className="cell cell8"> U</td>
-            <td className="cell cell9"> I</td>
-            <td className="cell cell10">V </td>
-            <td className="cell cell11">P </td>
-            <td className="cell cell12">N </td>
-            <td className="cell cell13">H </td>
-            <td className="cell cell14">B </td>
-          </tr>
-          <tr className="row13">
-            <td className="cell cell0"> N</td>
-            <td className="cell cell1"> O</td>
-            <td className="cell cell2"> E</td>
-            <td className="cell cell3"> V</td>
-            <td className="cell cell4"> F</td>
-            <td className="cell cell5"> J</td>
-            <td className="cell cell6"> E</td>
-            <td className="cell cell7"> U</td>
-            <td className="cell cell8"> E</td>
-            <td className="cell cell9"> D</td>
-            <td className="cell cell10">N </td>
-            <td className="cell cell11">E </td>
-            <td className="cell cell12">T </td>
-            <td className="cell cell13">E </td>
-            <td className="cell cell14">B </td>
-          </tr>
-          <tr className="row14">
-            <td className="cell cell0"> E</td>
-            <td className="cell cell1"> R</td>
-            <td className="cell cell2"> H</td>
-            <td className="cell cell3"> E</td>
-            <td className="cell cell4"> L</td>
-            <td className="cell cell5"> E</td>
-            <td className="cell cell6"> H</td>
-            <td className="cell cell7"> Z</td>
-            <td className="cell cell8"> O</td>
-            <td className="cell cell9"> R</td>
-            <td className="cell cell10">X </td>
-            <td className="cell cell11">E </td>
-            <td className="cell cell12">Y </td>
-            <td className="cell cell13">O </td>
-            <td className="cell cell14">S </td>
-          </tr>
-        </table>
+    return(
+      <div>
+        <div className="wordSearch">
+          <Table size="sm" style={{marginLeft:"10rem", marginRight:"5rem"}}>
+            <tbody>
+              {this.createTable()}
+            </tbody>
+          </Table>
+          <div style={{marginRight:"10rem"}}>
+            <div style={{backgroundColor:"green",fontWeight:"bold",padding:"1rem"}}>WORDS</div>
+            {this.createAnswerList()}
+          </div>
+        </div>
+        <p>Directions: Click on the letters that spell the words</p>
+        <div ref="final" style={{color:"white"}}>YOU DID IT!! CONGRATULATIONS!! </div>
       </div>
-    );
+    )
   }
+
 }
 
-export default WordSearch;
+export default wordsearch;
