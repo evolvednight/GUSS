@@ -2,7 +2,52 @@ import React, { Component } from "react";
 import { Button } from "react-bootstrap";
 import Image from "./Sofia_Images/Page_25.JPG";
 import { Link } from "react-router-dom";
+import press from './Sounds/press.mp3';
+import sounds from './Sounds/page3.m4a';
 class Page25 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      answer: "Wow",
+      play: false,
+      pause: true,
+    }
+    this.audio = new Audio(press);
+    this.audio2 = new Audio(sounds);
+  }
+  play = () => {
+    if(this.state.play ==false )
+    {
+    this.setState({ play: true, pause: false });
+    this.audio.play();
+    }
+    else
+    {
+    this.setState({ play: false, pause: true });
+    this.audio.pause();
+    this.audio.pause();
+    this.audio2.pause();
+    }
+  }
+    play2 = () => {
+      if(this.state.play ==false )
+      {
+      this.setState({ play: true, pause: false });
+      this.audio2.play();
+      }
+      else
+      {
+      this.setState({ play: false, pause: true });
+      this.audio.pause();
+      this.audio.pause();
+      this.audio2.pause();
+      }
+    }
+      pause = () => {
+        this.setState({ play: false, pause: true })
+          this.audio2.pause();
+          this.audio.pause();
+        }
   handleKeyPress = e => {
     let buttonName = e.target.className;
     let buttonNameSplit = buttonName.split(" ");
@@ -38,6 +83,9 @@ class Page25 extends Component {
           to want to hear all about this too, Sofia! Maybe we can bring the book
           home today and you can tell her all about it."
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <img src={Image} alt="image" />
         <div className="alt_text">
         Sofia and her brother and Dr.Q all sit on a bench reading a book about called the Research Rangers. On the cover of the book is a girl with glasses holding a clipboard and a boy holding a magnifying glass.
@@ -45,6 +93,7 @@ class Page25 extends Component {
         <Link to="/page24" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
+            onClick={this.play}
             ref="leftBtn"
             className="leftBtn"
           >
@@ -54,6 +103,7 @@ class Page25 extends Component {
         <Link to="/page26" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
+            onClick={this.play}
             autoFocus
             ref="rightBtn"
             className="rightBtn"
@@ -61,9 +111,7 @@ class Page25 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+      
       </div>
     );
   }

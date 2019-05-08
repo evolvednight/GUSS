@@ -1,17 +1,53 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
-import Image from "./Sofia_Images/Page_17.JPG";
-import Image1 from "./Sofia_Images/spot_difference_1.JPG"
-import Image2 from "./Sofia_Images/spot_difference_2.JPG"
-import Image3 from "./Sofia_Images/spot_difference_3.JPG"
-import Image4 from "./Sofia_Images/spot_difference_4.JPG"
-import Image5 from "./Sofia_Images/spot_difference_5.JPG"
-import Image6 from "./Sofia_Images/spot_difference_6.JPG"
-import Image7 from "./Sofia_Images/spot_difference_7.JPG"
-import Image8 from "./Sofia_Images/spot_difference_8.JPG"
-import Image9 from "./Sofia_Images/spot_difference_9.JPG"
+import SpotDiff from "../Games/SpotDiff";
 import { Link } from "react-router-dom";
+import press from './Sounds/press.mp3';
+import sounds from './Sounds/page17.m4a';
 class Page17 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      answer: "Wow",
+      play: false,
+      pause: true,
+    }
+    this.audio = new Audio(press);
+    this.audio2 = new Audio(sounds);
+  }
+  play = () => {
+    if(this.state.play ==false )
+    {
+    this.setState({ play: true, pause: false });
+    this.audio.play();
+    }
+    else
+    {
+    this.setState({ play: false, pause: true });
+    this.audio.pause();
+    this.audio.pause();
+    this.audio2.pause();
+    }
+  }
+    play2 = () => {
+      if(this.state.play ==false )
+      {
+      this.setState({ play: true, pause: false });
+      this.audio2.play();
+      }
+      else
+      {
+      this.setState({ play: false, pause: true });
+      this.audio.pause();
+      this.audio.pause();
+      this.audio2.pause();
+      }
+    }
+      pause = () => {
+        this.setState({ play: false, pause: true })
+          this.audio2.pause();
+          this.audio.pause();
+        }
   handleKeyPress = e => {
     let buttonName = e.target.className;
     let buttonNameSplit = buttonName.split(" ");
@@ -35,26 +71,19 @@ class Page17 extends Component {
     return (
       <div className="Page17">
         <div className="text">
-          There are 12 differences. Did you find them all? Differences on the
-          playground: 1. No flying bugs 2. Long sleeves and pants on Sofia 3. No
-          bug bites on Sofia 4. Long sleeves and pants on Michael 5. No bug
-          bites on Michael 6. Hat on Sofia 7. Bottle of bug spray 8. Kid playing
-          with ball instead of truck 9. No kid on slide 10. Flower near Michael
-          11. Butterfly 12. Bird on Sofia's bench
+         There are 9 differences. Can you find them all?
         </div>
-        <img src={Image} alt="image" />
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
+        
 
-        <div className= "Game">
-        <Button className = "Image1" size= "sm"><img src={Image1} alt="image1"/></Button>
-        <Button className = "Image2" size= "sm"><img src={Image2} alt="image2"/></Button>
-        <Button className = "Image3" size= "sm"><img src={Image3} alt="image3"/></Button>
-        <Button className = "Image4" size= "sm"><img src={Image4} alt="image4"/></Button>
-        <Button className = "Image5" size= "sm"><img src={Image5} alt="image5"/></Button>
-        <Button className = "Image6" size= "sm"><img src={Image6} alt="image6"/></Button>
-        <Button className = "Image7" size= "sm"><img src={Image7} alt="image7"/></Button>
-        <Button className = "Image8" size= "sm"><img src={Image8} alt="image8"/></Button>
-        <Button className = "Image9" size= "sm"></Button>
+        <div className = "Game_board">
+        {/* <img src={Image} alt="image" /> */}
+        <SpotDiff />
         </div>
+
+      
         
 
 
@@ -62,6 +91,7 @@ class Page17 extends Component {
         <Link to="/page16" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
+            onClick={this.play}
             ref="leftBtn"
             className="leftBtn"
           >
@@ -71,6 +101,7 @@ class Page17 extends Component {
         <Link to="/page18" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
+            onClick={this.play}
             autoFocus
             ref="rightBtn"
             className="rightBtn"
@@ -78,9 +109,7 @@ class Page17 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }
