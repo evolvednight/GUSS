@@ -88,6 +88,9 @@ class Page32 extends Component {
         </p>
          
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <img src={Image} alt="image" />
         <div className="alt_text">
         A microscope 
@@ -113,9 +116,7 @@ class Page32 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+      
       </div>
     );
   }

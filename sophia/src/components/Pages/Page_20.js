@@ -73,7 +73,13 @@ class Page20 extends Component {
         <div className="text">
           Lots and Lots of Research Words Complete the crossword below
         </div>
+<<<<<<< HEAD
         <Crossword />
+=======
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
+>>>>>>> 3516f53fab4917c8af7015574662bf7837443a99
         <div className="text">Game</div>
         <Link to="/page19" style={{ textDecoration: "none" }}>
           <Button
@@ -96,9 +102,7 @@ class Page20 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

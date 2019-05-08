@@ -75,6 +75,9 @@ class Page10 extends Component {
           group of people come together to talk about a topic that the scientist
           is interested in learning more about.
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <img src={Image} alt="image" />
         <div className="alt_text">
         A teacher showing a diagram of human lungs to a group of children sitting in a circle on the carpet in the classroom.
@@ -100,9 +103,7 @@ class Page10 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button  onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

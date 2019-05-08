@@ -9,7 +9,7 @@ class SpotDiff extends Component {
     render() {
         return (
             <div className="Spot_the_difference_game">
-                    {/* <img src={Image} alt="image" /> */}
+                    <img src={Image} alt="image" />
 
                     <div className = "sofia_head">
                     <Image_changer />

@@ -83,6 +83,9 @@ class Page6 extends Component {
           What do you want to know? I am happy to answer any of your questions.”
           “So what IS a research study?" was the first thing Sofia blurted out.
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <img src={Image} alt="image" />
         <div className="alt_text">
         Dr. Q and Sofia’s dad looking at Sofia. Sofia saying aloud “What is a study” as she shrugs her shoulder.

@@ -78,7 +78,9 @@ class Page26 extends Component {
           want." “Phew!” said Sofia, “Wow! You answered so many questions Dr.
           Q." Connect The Dots!
         </div>
-
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <div className="text">Game</div>
         <Link to="/page25" style={{ textDecoration: "none" }}>
           <Button
@@ -101,9 +103,7 @@ class Page26 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

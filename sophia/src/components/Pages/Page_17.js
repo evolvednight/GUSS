@@ -73,6 +73,9 @@ class Page17 extends Component {
         <div className="text">
          There are 9 differences. Can you find them all?
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         
 
         <div className = "Game_board">
@@ -106,9 +109,7 @@ class Page17 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }
