@@ -2,7 +2,7 @@
 Interactive and educational storybook for kids. The final project will be a webapp with activites that allow users to play games to progress through the story line. The development stack consists of React.JS for the front-end and Node.JS for the backend. 
 
 Link to Sophia Learns About Research
-https://mighty-woodland-80177.herokuapp.com/?fbclid=IwAR0ZV22C5P2oi11gzm32VR-BSZ1P8RQm3JVNbTL0nWl3TyMdlUGeQ7Fdpwc
+https://sofiastorybook.herokuapp.com/
 
 Scrum Board
 https://trello.com/invite/b/pSqALe0r/7e0792b462b8871a532c33ca42e0f7e2/sophia-scrum-board
