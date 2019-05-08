@@ -4,19 +4,87 @@ As a user I should be able to do the activities
 Task: Finalize Spot the difference
 
 Feature: Fix spot the difference game buttons
-1) Click on start story
-2) Click on next page until you hit page 16. ( Page can be seen in url)
-3) Look at picture. Remember picture.
-4) Click on next page
-5) Look at picture
-6) Click areas that were different than the previous' page image.
-7) Red circle should appear on clicked spot
-8) Repeat steps 5-7 until all 9 circles are found
+1) Go to the website https://sofiastorybook.herokuapp.com/
+2) Click on start story button
+3) Click on next page until you hit page 16. ( Page can be seen in url)
+4) Look at picture. Remember picture.
+5) Click on next page
+6) Look at picture
+7) Click areas that were different than the previous' page image.
+8) Red circle should appear on clicked spot
+9) Repeat steps 5-7 until all 9 circles are found
 
 Feature: Fix the background image of the whole game board by making it re-size when window size changes
-1) Click on start story
-2) Click on next page until you hit page 16. ( Page can be seen in url)
-3) Drag window edge to resize window 
-4) Image of the background should change in size when too small
-5) Click next page
-6) Repeat step 4
+1) Go to the website https://sofiastorybook.herokuapp.com/
+2) Click on start story button
+3) Click on next page until you hit page 16. ( Page can be seen in url)
+4) Drag window edge to resize window 
+5) Image of the background should change in size when too small
+6) Click next page
+7) Repeat step 4
+
+Feature: Create a function that accesses every element of the table
+1) Go to the website https://sofiastorybook.herokuapp.com/
+2) Click on skip pages button
+3) Click on Word Find button
+4) There should be a table of letters on the page, click on any of the letters
+5) The letters should change colors indicating the fact that the function accesses all the elements in the table
+6) Repeat step 4 and 5 for every letter on the table
+
+Feature: Create a function that keeps track of every element being pressed
+1) Go to the website https://sofiastorybook.herokuapp.com/
+2) Click on skip pages button
+3) Click on Word Find button
+4) There should be a table of letters on the page, click on any of the letters
+5) Continue clicking on letters
+6) The letters should turn green in the sequence it was pressed
+7) Repeat steps 4-8 for all sequences
+
+Feature: Create a function that determines if a sequence of letters were pressed that corresponds to the correct sequence of a Word
+1) Go to the website https://sofiastorybook.herokuapp.com/
+2) Click on skip pages button
+3) Click on Word Find button
+4) There should be a table of letters on the page, click on the letters that make a certain Word
+5) For example, on the first row, click on the letters s, c, i , e, n, t, i, s, t
+6) Clicking on the correct sequence of letters will permanently turn the boxes green
+7) Next click on random letters on the table
+8) When the correct sequence is not pressed, the boxes will go back to being white
+9) Repeat step 4-6 for all the words
+
+Feature: Create a table containing all the words to be searched and show that on the page as a guide
+1) Go to the website https://sofiastorybook.herokuapp.com/
+2) Click on skip pages button
+3) Click on Word Find button
+4) There should be a table of words on the right side of the page
+5) If there are exactly 15 words on the table, then the function works properly
+
+Feature: Create a function that highlights a right word on the table and crosses it out from the list of right words
+1) Go to the website https://sofiastorybook.herokuapp.com/
+2) Click on skip pages button
+3) Click on Word Find button
+4) There should be a table of letters on the page, click on the sequence of letters that would spell a correct word according to the list of right words
+5) The boxes should turn green
+6) Once the correct sequence is pressed the boxes should stay green
+7) The table of right words should highlight and stay green corresponding to the sequence of right letters that was pressed
+8) Repeat steps 4-7 for all words
+9) This should keep making the right words turn green and then stay green
+10) There should be a congratulations message at the bottom once done
+
+Test: Write test cases for Word searched
+1) Go to the website https://sofiastorybook.herokuapp.com/
+2) Click on skip pages button
+3) Click on Word Find button
+4) If the page renders with all the tables, the test passes. If not, the test fails
+
+Game: Finalize Word Search game
+1) Go to the website https://sofiastorybook.herokuapp.com/
+2) Click on skip pages button
+3) Click on Word Find button
+4) There should be a table of letters on the left side of the page and a table of words on the right side of the page
+5) Click on the letters that corresponds to the right words from the table called words. Clicking will turn the boxes green
+6) Once a correct sequence is pressed, the boxes containing the letters will stay green
+7) The word corresponding to the sequence pressed, will turn and stay green on the table called words
+8) Repeat for all the words
+9) If a correct sequence is not pressed, the boxes containing the letters will go back to being white
+10) Any deviation from the correct sequence will make the letters go back to being white
+11) When all the correct words are found and pressed, a congratulations message will pop up
