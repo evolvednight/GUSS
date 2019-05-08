@@ -83,7 +83,9 @@ class Page28 extends Component {
           Sofia assents to a study. Sofia’s parents consent to a study. Sofia
           and Michael learn about research. Start
         </div>
-
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <div className="text">Game</div>
         <Link to="/page27" style={{ textDecoration: "none" }}>
           <Button
@@ -106,9 +108,7 @@ class Page28 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

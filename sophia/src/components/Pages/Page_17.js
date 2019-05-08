@@ -4,7 +4,6 @@ import SpotDiff from "../Games/SpotDiff";
 import { Link } from "react-router-dom";
 import press from './Sounds/press.mp3';
 import sounds from './Sounds/page17.m4a';
-
 class Page17 extends Component {
   constructor(props) {
     super(props);
@@ -74,6 +73,9 @@ class Page17 extends Component {
         <div className="text">
          There are 9 differences. Can you find them all?
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         
 
         <div className = "Game_board">
@@ -107,9 +109,7 @@ class Page17 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

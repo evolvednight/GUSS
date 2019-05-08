@@ -80,6 +80,9 @@ class Page27 extends Component {
           study?” Dr. Q asked Sofia and her dad. Sofia said, “I think I would
           like to do that! I want to help change the world!”
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <img src={Image} alt="image" />
         <div className="alt_text">
         Sofia and her brother both transitioning into research rangers. They can be seen with their research ranger outfits. Sofia has a pen and a clip board with a cape that has a RR symbol on it. Sofia’s brother can be see with a lasso and a cape with the RR symbol on it.
@@ -105,9 +108,7 @@ class Page27 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+       
       </div>
     );
   }

@@ -85,6 +85,9 @@ class Page9 extends Component {
           each week that you are in a study. All of this information is called
           data.”
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <img src={Image} alt="image" />
         <div className="alt_text">
         Dr.Q, Sofia and her dad and brother looking up into a vortex of numbers and research words, graphs, tools, etc.
@@ -110,9 +113,7 @@ class Page9 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

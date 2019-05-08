@@ -79,6 +79,9 @@ class Page18 extends Component {
           you AND your parents give your consent.” Sofia heard a word she was
           not sure of. She asked “Wait. What Is consent?”
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <img src={Image} alt="image" />
         <div className="alt_text">
         Sofia facing and talking to Dr.Q. Sofia’s brother watches as he thinks about numbers and letters.
@@ -104,9 +107,7 @@ class Page18 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button  onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

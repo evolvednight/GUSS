@@ -77,6 +77,9 @@ class Page2 extends Component {
           anything. Then she looked at her dad. Her dad said, “Maybe. Can you
           tell us a little more?”
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <img src={Image} alt="image" />
         <div className="alt_text">
         Dr.Wilson looking at Sofia and her Dad. Sofia is sitting on the desk while her dad has his arm around her. Sofia’s brother tries to climb onto a chair.
@@ -102,9 +105,7 @@ class Page2 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+       
       </div>
     );
   }
