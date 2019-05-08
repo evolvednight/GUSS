@@ -77,6 +77,9 @@ class Page33 extends Component {
           Family The Knowles Family The Liss Family The Molnar We couldn't have
           done it without you!
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <Link to="/page1">
           <Button
             onKeyDown={this.handleKeyPress}
@@ -98,9 +101,7 @@ class Page33 extends Component {
             ABOUT PAGE
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

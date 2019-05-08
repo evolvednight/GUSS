@@ -78,6 +78,9 @@ class Page13 extends Component {
           yourself? Do you know how tall you are?___feet___Inches Do you know
           how much you weigh?____ pounds What size shoe are you?
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <img src={Image} alt="image" />
         <Link to="/page12" style={{ textDecoration: "none" }}>
           <Button
@@ -100,9 +103,7 @@ class Page13 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} ref="sound" onKeyDown={this.handleKeyPress} className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

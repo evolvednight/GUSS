@@ -78,6 +78,9 @@ class Page17 extends Component {
           with ball instead of truck 9. No kid on slide 10. Flower near Michael
           11. Butterfly 12. Bird on Sofia's bench
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         
 
         <div className = "Game_board">
@@ -111,9 +114,7 @@ class Page17 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

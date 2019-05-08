@@ -73,6 +73,9 @@ class Page8 extends Component {
         <div className="text">
           Can you help Sofia find all the words she just learned about?
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <WordSearch />
         <div className="text" />
 
@@ -101,9 +104,7 @@ class Page8 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

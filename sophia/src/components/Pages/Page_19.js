@@ -84,6 +84,9 @@ class Page19 extends Component {
           then you'll be called a participant which is what a person who is in a
           study is called.”
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <img src={Image} alt="image" />
         <div className="alt_text">
         Sofia with her arms against the table thinks about Dr.Q meeting Sofia’s mom and dad and herself.
@@ -109,9 +112,7 @@ class Page19 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

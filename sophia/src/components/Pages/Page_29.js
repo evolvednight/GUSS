@@ -93,6 +93,9 @@ class Page29 extends Component {
           numbers like age and height or words, like about how you feel. It can
           even be the notes scientists take from observations.
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <Link to="/page28" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
@@ -114,9 +117,7 @@ class Page29 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

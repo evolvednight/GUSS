@@ -75,8 +75,12 @@ class Page12 extends Component {
           Sometimes scientists ask you to give a sample of blood to understand
           what's going on inside your body.
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <img src={Image1} alt="image" />
         <img src={Image} alt="image" />
+        
         <Link to="/page11" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
@@ -98,9 +102,7 @@ class Page12 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} ref="sound" onKeyDown={this.handleKeyPress} className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

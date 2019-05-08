@@ -94,6 +94,9 @@ class Page30 extends Component {
           can see how something works from month to month. They can see how
           someone is feeling before a treatment and after a treatment.
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <Link to="/page29" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
@@ -115,9 +118,7 @@ class Page30 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button  onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+       
       </div>
     );
   }

@@ -81,6 +81,9 @@ class Page24 extends Component {
           worried about being too busy? Sofia nodded, “Yes. And I'm also worried
           about how to tell my friends about this when they ask about it.”
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <img src={Image} alt="image" />
         <div className="alt_text">
         Sofia thinks about a syringe and telling her three friends something. Sofia is also frowning while thinking about things.
@@ -106,9 +109,7 @@ class Page24 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

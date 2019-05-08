@@ -85,6 +85,9 @@ class Page14 extends Component {
           a kind of study where some people try a new medicine and other people
           try an old one. This is to see if the new one works better.”
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <img src={Image} alt="image" />
         <Link to="/page13" style={{ textDecoration: "none" }}>
           <Button
@@ -107,9 +110,7 @@ class Page14 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

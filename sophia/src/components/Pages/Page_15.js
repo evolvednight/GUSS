@@ -77,6 +77,9 @@ class Page15 extends Component {
           my shoes the new way, they stay tied all day. Now I don't trip on them
           anymore. It's great!'
         </div>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
         <img src={Image} alt="image" />
         <Link to="/page14" style={{ textDecoration: "none" }}>
           <Button
@@ -99,9 +102,7 @@ class Page15 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }

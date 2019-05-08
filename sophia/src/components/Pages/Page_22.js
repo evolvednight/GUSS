@@ -3,6 +3,7 @@ import { Button, Form, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import press from './Sounds/press.mp3';
 import sounds from './Sounds/page3.m4a';
+import Image from "./Sofia_Images/page_22.JPG";
 class Page22 extends Component {
   constructor(props) {
     super(props);
@@ -10,7 +11,10 @@ class Page22 extends Component {
       answer: "Wow",
       play: false,
       pause: true,
-    }
+      value: '',
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
       this.audio = new Audio(press);
       this.audio2 = new Audio(sounds);
     }
@@ -67,43 +71,37 @@ class Page22 extends Component {
       }
     }
   };
-
-  handleInputChange = e => {
-    this.setState({
-      [e.target.name]: e.target.value
-    });
-  };
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+  handleSubmit(event) {
+    if(this.state.value.toLowerCase() == "research rangers help solve problems"){
+    alert('Correct!');}
+    else{
+    alert('Incorrect, please try again' + this.state.value);}
+    event.preventDefault();
+  }
   
 
   render() {
     return (
       <div className="Page22">
         <div className="text">
-          Crack the Code! Help Sofia figure out the hidden message!
+          
         </div>
-
-        <Form style={{ margin: "10px" }} text="white">
-          <Form.Group as={Row} controlId="formHorizontalEmail">
-            <Form.Label column sm="5">
-              <font color="black">Answer: </font>
-            </Form.Label>
-            <Col sm="7">
-              <Form.Control
-                type=""
-                placeholder="0"
-                name="answer"
-                onChange={this.handleInputChange}
-              />
-            </Col>
-          </Form.Group>
-          <Button
-          onClick = {this.check}
-          >
-          </Button>
-        </Form>
+        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
+          sound
+        </Button>
+        <form onSubmit={this.handleSubmit}>
+        <label ref = "lab" className = "lab">
+        Crack the Code! Help Sofia figure out the hidden message!
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
        
 
-        <div className="text">Game</div>
+      <img src={Image} alt="image" />
         <Link to="/page21" style={{ textDecoration: "none" }}>
           <Button
             onKeyDown={this.handleKeyPress}
@@ -125,9 +123,7 @@ class Page22 extends Component {
             Next Page
           </Button>
         </Link>
-        <Button onClick={this.play2} onKeyDown={this.handleKeyPress} ref="sound" className="sound">
-          sound
-        </Button>
+        
       </div>
     );
   }
